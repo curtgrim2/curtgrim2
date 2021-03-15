@@ -1,64 +1,121 @@
+
+
+<head>
+
 <style>
+
  .my_name{
    color:white;
    text-align:center;
-   
+   text-shadow:1px 1px 3px gold;
+transform:translate(50px,260px);
+  font-size:50px;
+  animation: my_name 10s infinite;
+
   }
- 
- .languages{
-  color: white;
-  
-  
- }
- .aboutme{
-  
-  color: white;
- }
- 
- .personal{
-  color: white;
- }
- 
- .extra{
-  color: white;
- }
- 
- social{
-  color: white;
- }
- 
- .miscl{
-  color: white;
-  font-size:20px;
-  margin: 6px;
- }
- 
- span{
-  
-  font-size:20px;
-  margin: 6px;
- }
- 
-  
+
+  @keyframes my_name{
+
+    0%{
+      transform:translateY(230px);
+    }
+
+    50%{
+      transform:translateY(210px);
+    }
+
+    100%{
+      transform:translateY(230px);
+    }
+  }
+
+
+
+  .first {
+
+transform:translate(130px,150px);
+  }
+
+  .first ul li{
+    display:inline-block;
+  }
+
+  .first ul li a {
+    padding-right: 110px;
+    padding-left:110px;
+    text-decoration:none;
+  }
+
+  li{
+    /*text-shadow: 2px 2px 2px teal;*/
+  }
+
+  a{
+    color:white;
+    font-size:40px;
+  }
+
+  a:hover{
+    color:black;
+    text-shadow: 15px 5px 5px white;
+  }
+
+/*  SECOND ROW*/
+.second {
+
+transform:translate(130px,280px);
+}
+
+.second ul li{
+  display:inline-block;
+}
+
+.second ul li a {
+  padding-right: 110px;
+  padding-left:110px;
+  text-decoration:none;
+}
+
+a{
+  color:white;
+  font-size:40px;
+}
+
+a:hover{
+  color:black;
+  text-shadow: 2px 5px 3px white;
+}
+
+
   body{
     background: black;
-    
+
   }
- 
-  
+
+
 </style>
+</head>
 
 <body>
- <span class ="languages">Top Coding Languages </span>  <span class = "aboutme">About Me</span>  <span class ="personal">Personal Projects </span>  
 
- <!--<span class = "1sttab"> Top Coding Languages  About Me  Personal Projects  Extracuricular Activities</span> -->
- 
- <br> 
+
+<nav class = "first"><ul>
+  <li><a href =""> About Me  </a></li>
+  <li><a href =""> Personal Projects  </a></li>
+  <li><a href =""> Extracurricular </a></li>
+</ul> </nav>
+
+
 <h1 class = "my_name"> CURTIS GRIMSLEY II </h1>
- 
-  <span class ="extra">Extracuricular Activities </span> <span class ="social"> Social Media </span><!-- Resume --><span class ="miscl"> Miscellaneous Work </span>
- 
-  
-  <!--<span class = "2ndspan"> Social Media  <!--Resume --> <!--Miscellaneous Work</span>-->
- 
+
+
+<nav class = "second"><ul>
+  <li><a href ="">Social Media </a></li>
+  <li><a href ="">Miscellaneous </a></li>
+  <li><a href ="">Resume Request </a></li>
+</ul></nav>
+
+
+
 </body>
+
