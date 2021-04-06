@@ -1,23 +1,8 @@
-
-
+<!DOCTYPE>
 <html>
 
 <head>
-<script>
-/*alert("WEBSITE UNDER REMODELING; PROCEED AS CAUTIONED");*/
-
-
-</script>
-
-
 <style>
-/*.socials{
-  background-color:white;
-  color:black
-  font-size:15px;
-  transform:translateY(400px);
-  text-align:center;
-}*/
 
 
  .my_name{
@@ -50,6 +35,9 @@ transform:translate(50px,260px);
   .first {
 
 transform:translate(180px,150px);
+margin-right: 70px;
+margin-left: 70px;
+font-family: "Trebuchet MS";
   }
 
   .first ul li{
@@ -58,9 +46,7 @@ transform:translate(180px,150px);
 
   .first ul li a {
    margin-right: 70px;
-    /*margin-left:40px;*/
-   padding-right: 40px;
-    padding-left:40px;
+   padding-left: 40px;
     text-decoration:none;
     font-family: "Trebuchet MS";
   }
@@ -101,45 +87,13 @@ transform:translate(180px,280px);
   font-family: "Trebuchet MS";
 }
 
-/*a{
-  color:white;
-  font-size:40px;
-  font-family: "Trebuchet MS"; } /*'Chalkduster', fantasy;*/ /*'Lobster', cursive;*/
-
 
 .second ul li a:hover{
   color:black;
   text-shadow: 2px 5px 3px white;
 }
 
- .socials {
-/*
-  transform:translate(150px,300px)
-  padding-right: 110px;
-  padding-left:110px;
-  padding-top:110px
-  visability:hidden;
-*/
 
-transform:translate(200px,550px);
-position:fixed;
-}
-
-.social1{
-  /*padding-left:50px;
-  padding-right: 50px;*/
-
-/*  margin-left:300px;
-  margin-bottom:380px;
-  margin-top:380px;*/
-  /*margin-right:200px;*/
-  position:fixed;
-}
-
-.social2{
-
-  position:relative;
-}
 
 a{
   text-decoration:none;
@@ -151,23 +105,101 @@ a{
 
   }
 
-  /*.mist{
-    background:url();
-  }*/
+  .soc {
+    position: relative;
+    display: inline-block;
+    color: white;
+    font-size: 40px;
+    font-family: "Trebuchet MS";
+  }
+
+  .soc2 {
+    display: none;
+    position: absolute;
+    /*background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+    /*padding: 12px 16px;*/
+  /*  padding-right:50px; */
+    padding: 25px;
+    color:white;
+    font-family: "Trebuchet MS";
+    transform:translate(-150px,0px);
+  }
+
+  .soc:hover .soc2 {
+    display: block;
+  }
+
+  .soc3{
+    display:none;
+    position:absolute;
+    /*padding:12px 16px;
+    padding-left:50px;*/
+    padding: 25px;
+    /*margin-right: 180px;
+    margin-left: 180px;*/
+    transform:translate(80px,0px);
+    color:white;
+    font-family: "Trebuchet MS";
+  }
+
+  .soc:hover .soc3{
+    display: block;
+  }
+
+span{
+  color:white;
+}
+
+.pp{
+/*  padding-left: 120px;
+  padding-right:120px*/
+  margin: 150px;
+
+}
+
+.ec{
+/*  padding-right:70px*/
+
+  margin-left: 150px;
+}
+
+.ss{
+  margin-right:150px;
+}
+
+.itb{
+
+  margin-top:400px;
+  color:white;
+}
+
 </style>
+
+
+
 </head>
 
-
-
 <body>
-
 <div class = "mist">
-<nav class = "first"><ul>
-  <li><a href =""> Socials  </a></li>
-  <li><a href =""> Personal Projects  </a></li>
-  <li><a href =""> Extracurricular </a></li>
+
+
+<nav class = "first">
+  <div class = "soc">
+  <span class = "ss"> Social </span>
+  <div class = "soc2">
+<a href = "https://www.linkedin.com/in/curtis-grimsley-ii-708a29174/">  Linkedin </a>
+  </div>
+  <div class = "soc3">
+  <a href = "https://www.sololearn.com/profile/8759553">  SoloLearn </a>
+  </div>
+  </div>
+<span class = "pp"><a href ="personalprojects.html"> Personal Projects  </a></span>
+<spanclass = "ec"><a href ="extracurricular.html"> Extracurricular </a></span>
 </ul> </nav>
 
+<!-- Have the 4 completed links in 4 corners and the other 2 in red or just display:none or gone -->
 
 <h1 class = "my_name"> CURTIS GRIMSLEY II </h1>
 
@@ -178,25 +210,10 @@ a{
   <li><a href ="">Resume Request </a></li>
 </ul></nav>
 
-<div class = "socials">
-<a class = "social1" href = "https://www.sololearn.com/profile/8759553"> SoloLearn </a>
-<a class = "social2" href = "https://www.linkedin.com/in/curtis-grimsley-ii-708a29174/"> Linkedin </a>
+<div class = "itb" align = center> In the begining there was nothing...  </div>  <!-- Have it fade in and out?  -->
+<!-- Or the second quote could be "In the beginning there was nothing" ; "DLT" quote could be a link
+ for other pages to go back to the home page (have a tag when you hover it to say home page)-->
 </div>
 
-
-</div>
-
-
-<div class = "socials"> Socials  <br>
-<span class = "links">
-<a href = "https://www.sololearn.com/profile/8759553"> SoloLearn </a>
-<a href = "https://www.linkedin.com/in/curtis-grimsley-ii-708a29174/"> Linkedin </a>
-</span>
-
-
-
-  </div>
 </body>
 </html>
-
-
