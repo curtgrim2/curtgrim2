@@ -3,12 +3,26 @@
 
 <head>
 <style>
+body{
+  background-image:url(Mist2.jpg);
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn{
+  0%{
+    opacity:0;
+  }
+
+  100%{
+    opacity:1;
+  }
+}
 
 
  .my_name{
    color:white;
    text-align:center;
-   text-shadow:1px 1px 3px gold;
+   text-shadow:1px 1px 3px teal;
 transform:translate(50px,260px);
   font-size:50px;
   animation: my_name 10s infinite;
@@ -100,12 +114,10 @@ a{
 }
 
 
-  body{
-    background-image:url(Mist2.jpg);
-
-  }
-
   .soc {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 25px;
     position: relative;
     display: inline-block;
     color: white;
@@ -114,6 +126,7 @@ a{
   }
 
   .soc2 {
+
     display: none;
     position: absolute;
     /*background-color: #f9f9f9;
@@ -124,7 +137,7 @@ a{
     padding: 25px;
     color:white;
     font-family: "Trebuchet MS";
-    transform:translate(-150px,0px);
+    transform:translate(-250px,0px);
   }
 
   .soc:hover .soc2 {
@@ -139,12 +152,26 @@ a{
     padding: 25px;
     /*margin-right: 180px;
     margin-left: 180px;*/
-    transform:translate(80px,0px);
+    /*transform:translate(80px,0px);*/
     color:white;
     font-family: "Trebuchet MS";
   }
 
   .soc:hover .soc3{
+    display: block;
+  }
+
+  .soc4{
+
+    display:none;
+    position:absolute;
+    padding: 25px;
+    transform:translate(260px,0px);
+    color:white;
+    font-family: "Trebuchet MS";
+  }
+
+  .soc:hover .soc4{
     display: block;
   }
 
@@ -157,7 +184,7 @@ span{
   padding-right:120px*/
   margin: 150px;
   margin-left: 400px;
-
+transform:translateY(-100px);
 }
 
 .ec{
@@ -191,21 +218,26 @@ span{
 
 <nav class = "first">
   <div class = "soc">
-  <span class = "ss"> Social </span>
+  <div class = "ss"> Social </span> <!-- was span  -->
   <div class = "soc2">
-<a href = "https://www.linkedin.com/in/curtis-grimsley-ii-708a29174/">  Linkedin </a>
+<a target ="_blank" href = "https://www.linkedin.com/in/curtis-grimsley-ii-708a29174/">  Linkedin </a>
   </div>
   <div class = "soc3">
-  <a href = "https://www.sololearn.com/profile/8759553">  SoloLearn </a>
+  <a target = "_blank" href = "https://www.sololearn.com/profile/8759553">  SoloLearn </a>
+</div>
+
+<div class = "soc4">
+<a target = "_blank" href = "https://github.com/curtgrim2">  GitHub </a>
+</div>
   </div>
-  </div>
+</div>
 <span class = "pp"><a href ="personalprojects.html"> Personal Projects  </a></span>
 <!--<span class = "ec"><a href ="extracurricular.html"> Extracurricular </a></span> -->
 </ul> </nav>
 
 <!-- Have the 4 completed links in 4 corners and the other 2 in red or just display:none or gone -->
 
-<h1 class = "my_name"> CURTIS GRIMSLEY II </h1>
+<h1 class = "my_name"> CURTIS GRIMSLEY II </h1>  <!-- Alternate: Just 2 lines with 1st row=name and second being everything else   -->
 
 
 <nav class = "second"><ul>
