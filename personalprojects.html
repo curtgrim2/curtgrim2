@@ -36,13 +36,41 @@ div{
   color:white;
   font-size:25px;
 }
+
+span{
+  color:white;
+}
 body{
 	background-image:url(Mist2.jpg);
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn{
+
+  0%{
+    opacity:0;
+  }
+  100%{
+    opacity:1;
+  }
 }
 
 a{
   text-decoration:none;
   color:white;
+}
+
+
+.palindromepic{
+  margin-bottom: 40px;
+}
+
+.bjackv1{
+  margin-bottom: 40px;
+}
+
+.clm{
+  margin-right:120px;
 }
 
 </style>
@@ -55,7 +83,7 @@ a{
 <br>
 <div class = "pp" align = center > Personal Project  </div>
 <br>
-<!--<div> *Note these are my prefered coding languages in order  --> </div> <!--     -->
+<!--<div> *Note these are my prefered coding languages in order   </div> --><!--     -->
 <br>
 <br>
 <br>
@@ -64,21 +92,19 @@ a{
 <br>
 <img class = "palindromepic"  src = "palindrome.png" height = "500px" width = "800px"  align = center border = "5 px"/>
 
-<br>
-<br>
-<br>
-<br>
 <div align = center >   Black Jack Game (Version 1) Example Explanation + Example </div>
 <br>
 <br>
 <br>
 <img class = "bjackv1"  src = "bjackv1.png" height = "500px" width = "800px"  align = center/>
+<div class = "clm" align = "center"> Command Line Arguments: (100 = Bankroll Amount) (100 = Hands/Rounds )( Player = Player Type/Strategy) </div>
 <div>   </div>
 
 <div>   </div>
 
 <br>
 <br>
-<div class = "linkback"> <a href ="index.html">  DONT LOSE TOUCH  </a></div>
+<div class = "linkback" align = "center" title = "Go back to Home Page"> <a href ="index.html">  DONT LOSE TOUCH  </a></div>
+<br><br>
 </body>
 </html>
