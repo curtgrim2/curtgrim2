@@ -3,7 +3,7 @@
 <head>
 <style>
 body{
-/*  background-color: black;*/
+
 background-image:url(Mist2.jpg);
 animation: moving 100s linear infinte;
 }
@@ -16,17 +16,33 @@ animation: moving 100s linear infinte;
 
 
 h1{
+  margin-bottom:40px;
   color:white;
   text-align:center;
-  transform:translateY(180px);
+  /*transform:translateY(180px);*/
   font-size:40px;
+animation: move 10s infinite
+}
 
+@keyframes move{
+  0%{
+    transform:translateY(15px);
+  }
+
+  50%{
+    transform:translateY(5px);
+  }
+
+  100%{
+    transform:translateY(15px);
+  }
 }
 
 .about{
+  margin-bottom: 50px;
   color:white;
   text-align:center;
-  transform:translateY(180px);
+/*  transform:translateY(180px);*/
   font-size:20px;
   font-family: 'Lobster', cursive;
 }
@@ -34,7 +50,7 @@ h1{
 .linkback{
   color:white;
 text-align:center;
-transform:translateY(300px);
+/*transform:translateY(300px);*/
 }
 
 a {
@@ -46,13 +62,35 @@ a:hover{
 
 }
 
+div{
+  color:white;
+}
+
+.info{
+
+  font-size: 25px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+ol li {
+
+  align = "center";
+}
+
+.linkback{
+  margin-top: 100px;
+}
+
 </style>
 
 </head>
 
 <body>
-  <div class = "misty">
+
 <h1> ABOUT ME  </h1>
+
+<div class = "info" align = "center">  Classification : Junior <br> Expected Graduation Date: May 2022  </div>
 
 <div class = "about"> Absorbing the different aspects of college both social and educational. My true goal in <br>
 life is to create something that is WORLD CHANGING, an aspiration of mine that dates back to me as a child.<br>
@@ -61,9 +99,35 @@ In order to accomplish this goal, I know I'll have to 1. Interact with others wi
 3. Interact with experienced engineers that will show me the path to reach that goal.
 </div>
 
+<!--  Include age prefered coding languages in order and other bio resume info (MAYBE EMAIL NOT NUMBER)   -->
+<br>
 
-<div class = "linkback"> <a href ="index.html">  BACK TO HOMEPAGE  </a></div>
+<!--
+<div> <font color = "white" size = "5px" > *My prefered coding languages in order: </font>  </div>
 
+<ol>
+  <font color = "white" >
+<li> Java  </li>
+<li> C++  </li>
+<li>  Python </li>
+</font>
+</ol>  -->
+
+
+
+
+<div align = "center"> <font color = "white" size = "5px" > Prefered coding languages in order:
+
+<!--<ol align = "center">-->
+
+<ol align = "center">1.Java  </li>
+<ol align = "center">2.C++  </li>
+<ol align = "center">3.Python </li>
+</font>
+<!--</ol>-->
 </div>
+
+<div class = "linkback" title = "Go back to Home Page"> <a href ="personalpagetwo.html">  Don't Lose Touch  </a></div>
+
 </body>
 </html>
