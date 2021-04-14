@@ -8,7 +8,7 @@ body{
   animation: fadeIn 2s;
 }
 
-@keyframes fadeIn{
+/* @keyframes fadeIn{
   0%{
     opacity:0;
   }
@@ -16,7 +16,7 @@ body{
   100%{
     opacity:1;
   }
-}
+} */
 
 
  .my_name{
@@ -142,23 +142,20 @@ a{
 
   .soc:hover .soc2 {
     display: block;
+    animation: fadeIn 2s
   }
 
   .soc3{
     display:none;
     position:absolute;
-    /*padding:12px 16px;
-    padding-left:50px;*/
     padding: 25px;
-    /*margin-right: 180px;
-    margin-left: 180px;*/
-    /*transform:translate(80px,0px);*/
     color:white;
     font-family: "Trebuchet MS";
   }
 
   .soc:hover .soc3{
     display: block;
+    animation: fadeIn 2s
   }
 
   .soc4{
@@ -173,7 +170,18 @@ a{
 
   .soc:hover .soc4{
     display: block;
+    animation: fadeIn 2s
   }
+
+  @keyframes fadeIn{
+   0%{
+     opacity:0;
+   }
+
+   100%{
+     opacity:1;
+   }
+ } 
 
 span{
   color:white;
