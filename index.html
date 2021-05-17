@@ -4,11 +4,26 @@
 <head>
 <style>
 body{
-  background-image:url(Mist2.jpg);
-  animation: fadeIn 2s;
+
+/*background-color: black;*/
+background-image:url(3Dmist3.png);
+/*  animation: fadeIn 2s;
+opacity: 0;*/
+transition: opacity .5s;
+animation: fadeIn 2s;
+animation: backgroundScroll 15s linear infinite;
+animation-fill-mode: forwards;
 }
 
-/* @keyframes fadeIn{
+
+@keyframes backgroundScroll {
+from {background-position: 0 0;}
+to {background-position: -180px 0px;}
+
+}
+
+
+ @keyframes fadeIn{
   0%{
     opacity:0;
   }
@@ -16,13 +31,13 @@ body{
   100%{
     opacity:1;
   }
-} */
+}
 
 
  .my_name{
    color:white;
    text-align:center;
-   text-shadow:1px 1px 3px teal;
+   text-shadow:1px 1px 2px black, 0px 0px 25px #99ffeb, 0 0 5px #00cca3;
 transform:translate(50px,260px);
   font-size:50px;
   animation: my_name 10s infinite;
@@ -48,9 +63,10 @@ transform:translate(50px,260px);
 
   .first {
 
-transform:translate(180px,150px);
-margin-right: 70px;
-margin-left: 70px;
+transform:translate(20px,150px);
+margin-right: 20px;
+margin-left: 100px;
+margin-top: 140px;
 font-family: "Trebuchet MS";
   }
 
@@ -59,8 +75,8 @@ font-family: "Trebuchet MS";
   }
 
   .first ul li a {
-   margin-right: 70px;
-   padding-left: 40px;
+   margin-right: 30px;
+   padding-left: 10px;
     text-decoration:none;
     font-family: "Trebuchet MS";
   }
@@ -75,8 +91,9 @@ font-family: "Trebuchet MS";
   }
 
   .first ul li a:hover{
-    color:black;
-    text-shadow: 2px 5px 3px white;
+    /*color:black;
+    text-shadow: 2px 5px 3px white;*/
+    text-shadow:1px 1px 2px black, 0px 0px 25px #99ffeb, 0 0 5px #00cca3;
   }
 
 /*  SECOND ROW*/
@@ -112,14 +129,16 @@ transform:translate(180px,280px);
 a{
   text-decoration:none;
 }
-  
-  a:hover{
-  color:black;
-  text-shadow: 2px 5px 3px white;
+
+a:hover{
+  /*color:black;
+  text-shadow: 2px 5px 3px white;*/
+  text-shadow:1px 1px 2px black, 0px 0px 15px #99ffeb, 0 0 5px #00cca3;
 }
 
 
   .soc {
+    cursor:pointer;
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 50px;
@@ -130,97 +149,215 @@ a{
     font-family: "Trebuchet MS";
   }
 
+  .soc:hover{
+    text-shadow:1px 1px 2px black, 0px 0px 15px goldenrod, 0 0 5px khaki;
+  }
+
   .soc2 {
 
     display: none;
     position: absolute;
-    /*background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
-    /*padding: 12px 16px;*/
-  /*  padding-right:50px; */
-    padding: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-top:25px;
     color:white;
     font-family: "Trebuchet MS";
     transform:translate(-250px,0px);
+    /*display: block;*/
   }
 
   .soc:hover .soc2 {
     display: block;
-    animation: fadeIn 2s
+    animation: downer2 1.5s
   }
 
   .soc3{
     display:none;
     position:absolute;
-    padding: 25px;
     color:white;
     font-family: "Trebuchet MS";
+  /*  display: block;*/
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  padding-top:25px;
+
   }
 
   .soc:hover .soc3{
     display: block;
-    animation: fadeIn 2s
+    animation: downer3 1.5s
   }
 
   .soc4{
 
     display:none;
     position:absolute;
-    padding: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-top:25px;
     transform:translate(260px,0px);
     color:white;
     font-family: "Trebuchet MS";
+  /*  display: block;*/
   }
 
   .soc:hover .soc4{
     display: block;
-    animation: fadeIn 2s
+    animation: downer4 1.5s
+
   }
 
-  @keyframes fadeIn{
-   0%{
-     opacity:0;
-   }
+  @keyframes downer2{
 
-   100%{
-     opacity:1;
-   }
- } 
+    0%{
+      opacity:0;
+      transform:translate(-100px,-50px); /*-250*/
+    }
+
+    100%{
+      opacity:1;
+      transform:translate(-250px,0px);
+    }
+
+  }
+
+  @keyframes downer3{
+
+    0%{
+      opacity:0;
+      transform:translate(0px,-50px); /*0px*/
+    }
+
+    100%{
+      opacity:1;
+      transform:translate(0px,0px);
+    }
+
+  }
+
+  @keyframes downer4{
+
+    0%{
+      opacity:0;
+      transform:translate(200px,-50px);
+    }
+
+    100%{
+      opacity:1;
+    /*  transform:translate(0,-10pxx);*/
+    }
+
+  }
+
+
 
 span{
   color:white;
 }
 
 .pp{
-/*  padding-left: 120px;
-  padding-right:120px*/
-  margin: 150px;
-  margin-left: 400px;
-transform:translateY(-100px);
+ margin-left: 130px;
+  margin-right:40px
+
+/*transform:translate(350px,-380px);*/
+}
+
+.cf{
+  margin-left: 130px;
+   margin-right:40px;
+   font-size:40px;
+}
+
+.cf:hover{
+  text-shadow: 0px 0px 5px red,0px 0px 25px #FF0000;
+  cursor:not-allowed;
 }
 
 .ec{
-/*  padding-right:70px*/
-
-  margin-left: 400px;
+  margin-left: 40px;
+  /* margin-right:40px*/
   font-family: "Trebuchet MS";
 }
 
+.am{
+  margin-left: 40px;
+   margin-right:40px
+}
 
-.ss{
-  margin-right:150px;
-  cursor:pointer;
+
+.pp:onclick{
+  /*animation: fadeIn2 2s;*/
+  transition:
+}
+
+
+
+@keyframes fadeIn2{
+ 0%{
+   opacity:1;
+ }
+
+ 50%{
+   opacity:.5;
+ }
+
+ 100%{
+   opacity:0;
+ }
 }
 
 .itb{
 
-  margin-top:400px;
+
   color:white;
+  margin-left:10px;
+  font-family: system-ui;
 }
 
+.created{
+
+  color:white;
+  margin-right:10px;
+  font-family: system-ui;
+}
+
+.bottom{
+  margin-top:400px;
+}
 </style>
 
+
+<script>
+
+/*function amfadeout(){
+document.getElementById("ecurr").animate([
+  {transform: 'opacity:1'}
+  {transform: 'opacity:0'}
+], {
+  duration: 1000,
+});
+}*/
+
+/*
+function linkedinout(){
+
+}*/
+/*
+$(document).ready(function(){
+$("").click(function(){
+
+})
+})*/
+
+var test = document.getElementById('soc2');
+document.getElementById('soc2').onmouseout = function(){
+  test.classList.toggle('fadeIn2');
+}
+
+</script>
 
 
 </head>
@@ -228,11 +365,13 @@ transform:translateY(-100px);
 <body>
 <div class = "mist">
 
+<h1 class = "my_name"> CURTIS GRIMSLEY II </h1>  <!-- Alternate: Just 2 lines with 1st row=name and second being everything else   -->
 
 <nav class = "first">
+  <ul>
   <div class = "soc">
-  <div class = "ss"> Social </span> <!-- was span  -->
-  <div class = "soc2">
+   Social  <!-- was span  -->
+  <div onmouseout = "linkedinout" class = "soc2" id = "soc2">
 <a target ="_blank" href = "https://www.linkedin.com/in/curtis-grimsley-ii-708a29174/">  Linkedin </a>
   </div>
   <div class = "soc3">
@@ -242,28 +381,28 @@ transform:translateY(-100px);
 <div class = "soc4">
 <a target = "_blank" href = "https://github.com/curtgrim2">  GitHub </a>
 </div>
-  </div>
 </div>
-<span class = "pp"><a href ="personalprojects.html"> Personal Projects  </a></span>
-<!--<span class = "ec"><a href ="extracurricular.html"> Extracurricular </a></span> -->
-</ul> </nav>
+<!--<span class = "pp" ><a href ="personalprojects.html"> Personal Projects  </a></span>-->
+<span class = "cf" > Contact/Feedback </span>
+ <!--</nav>-->
 
 <!-- Have the 4 completed links in 4 corners and the other 2 in red or just display:none or gone -->
 
-<h1 class = "my_name"> CURTIS GRIMSLEY II </h1>  <!-- Alternate: Just 2 lines with 1st row=name and second being everything else   -->
-
-
-<nav class = "second"><ul>
-  <li><a href ="aboutme.html">About Me </a></li>
+<!--<nav class = "second">-->
+  <span class = "am"><a href ="aboutme.html" onclick = "amfadeon">About Me </a></span>
 <!--  <li><a href ="">Miscellaneous </a></li>
   <li><a href ="">Resume Request </a></li>  -->
-  <span class = "ec"><a href ="extracurricular.html"> Extracurricular </a></span>
+  <span class = "ec" id= "ecurr"><a href ="extracurricular.html"> Extracurricular </a></span>
 </ul></nav>
 
-<div class = "itb" align = center> In the beginning there was nothing...  </div>  <!-- Have it fade in and out?  -->
+<div class = "bottom">
+<div class = "itb" align = left> My own space...  </div>  <!-- Have it fade in and out?  -->
 <!-- Or the second quote could be "In the beginning there was nothing" ; "DLT" quote could be a link
  for other pages to go back to the home page (have a tag when you hover it to say home page)-->
 </div>
 
+<div class = "created" align = right> ...created by ME!!  </div>
+</div>
+</div>
 </body>
 </html>
