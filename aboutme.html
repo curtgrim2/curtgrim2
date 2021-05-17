@@ -1,11 +1,40 @@
 <!DOCTYPE>
 <html>
+<!--<meta charset="UTF-8"> -->
 <head>
 <style>
 body{
 
-background-image:url(Mist2.jpg);
+background-image:url(3Dmist3.png);
+/*background-color:black;*/
+
 animation: moving 100s linear infinte;
+animation: fadeIn 2s;
+animation: backgroundScroll 15s linear infinite;
+animation-fill-mode: forwards;
+}
+
+
+@keyframes fadeIn{
+
+  0%{
+    opacity:0;
+  }
+  100%{
+    opacity:1;
+  }
+}
+
+@keyframes backgroundScroll {
+from {background-position: 0 0;}
+to {background-position: -180px 0px;}
+
+}
+
+
+a{
+  text-decoration:none;
+  color:white;
 }
 
 @keyframes moving {
@@ -17,6 +46,7 @@ animation: moving 100s linear infinte;
 
 h1{
   margin-bottom:40px;
+  text-shadow: 1px 1px 2px black, 0px 0px 25px #99ffeb, 0px 0px 5px #00cca3;
   color:white;
   text-align:center;
   /*transform:translateY(180px);*/
@@ -38,20 +68,6 @@ animation: move 10s infinite
   }
 }
 
-.about{
-  margin-bottom: 50px;
-  color:white;
-  text-align:center;
-/*  transform:translateY(180px);*/
-  font-size:20px;
-  font-family: 'Lobster', cursive;
-}
-
-.linkback{
-  color:white;
-text-align:center;
-/*transform:translateY(300px);*/
-}
 
 a {
   text-decoration:none;
@@ -69,7 +85,7 @@ div{
 .info{
 
   font-size: 25px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   margin-top: 50px;
 }
 
@@ -79,29 +95,103 @@ ol li {
 }
 
 .linkback{
-  margin-top: 100px;
+  margin-top: 30px;
+  margin-bottom: 0px;
+ color:white;
+text-align:center;
+font-size:20px;
+font-family: "Times New Roman", Times, serif;
 }
-  
-  video{
 
-margin-left: 450px;
+.linkback:hover{
+  color:black;
+  text-shadow: 0px 0px 1px black, 2px 2px 1px #03f8fc;
+}
+
+.clickhere{
+  margin-top:20px;
+  margin-left:550px;
+text-shadow: 1px 1px 2px black, 0px 0px 25px gold;
+font-family: "Times New Roman", Times, serif;
 
 }
 
-  ul li{
+.clickme{
+  margin-top: 30px;
+}
+
+
+ul li{
   color:white;
+  font-size: 15px;
 }
 
-.thelist{
-  margin-top:50px;
-  margin-left:650px;
-  font-size: 20px;
-}
 
 .rct{
-  
+/*  margin-top:50px;
+  margin-left:100px;*/
+  font-size: 18px;
+font-family: "Lucida Console", "Courier New", monospace;
 }
-  
+
+span{
+  margin:20px;
+}
+
+video{
+/*  height:600px;
+  width:600px;*/
+  margin-right:10px;
+  height:50%;
+  width:50%
+  margin-bottom:10px;
+  /*clear:right;*/
+}
+.vid{
+float:left;
+/*clear:right;*/
+}
+.codel{
+  float:left;
+  margin-left:30px;
+  margin-right:60px;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.about{
+  /*margin-top: 50px;
+  margin-bottom: 50px;
+  text-align:center;*/
+  margin-right:20px;
+  margin-left:190px;
+color:white;
+  font-size:20px;
+  font-family: 'Lobster', cursive;
+
+}
+
+.aboutalt{
+
+margin-right:80px;
+color:white;
+  font-size:20px;
+  font-family: 'Lobster', cursive;
+  float:right;
+  height:30%;
+  width:30%;
+
+}
+.clearing{
+  clear:both;
+}
+
+div{
+  font-family: 'Lobster', cursive;
+}
+
+ul li{
+  font-family: 'Lobster', cursive;
+}
 </style>
 
 </head>
@@ -110,63 +200,51 @@ margin-left: 450px;
 
 <h1> ABOUT ME  </h1>
 
-<div class = "info" align = "center">  Classification : Junior <br> Expected Graduation Date: May 2022  </div>
-  
-  <video controls>
+<div class = "info" align = "center">  <span> Classification : Junior</span>   <span>Expected Graduation Date: May 2022 </span> </div>
+<hr>
+
+<div class = "main">
+  <div class = "codel"> <font color = "white" size = "4px" > Prefered coding languages in order:
+  <div>1.Java  </div>
+  <div>2.C++  </div>
+  <div>3.Python </div>
+  </font>
+
+  <br>
+  <div class = "rct"> Relevant Courses Taken:  </div>
+  <ul>
+  <li> Intro to Computer Engineering w/ Java </li>
+  <li> Computer Programs Design </li>
+  <li> Data Structures C++ </li>
+  <li> Discrete Systems Modeling </li>
+  <li> Engineering Design and Ethics </li>
+  <li> Internet Systems </li>
+  </ul>
+
+</div>
+
+<video controls>
 <source src = "InterviewAboutMe.mp4" type="video/mp4">
 <source src= "" type = "">
 </video>
 
-<div align = "center" class = "clickhere"> <a href = "http://ncat.interviewstream.com/link/?wNVfvTu3PJ6R" > Click here to see the rest of the interview (2021)</a> </div>
 
-<div class = "about"> At this stage of my life and college career, I am still in the process of gaining an internship as well as <br>
-  a mentorship and a potential future job. My interests all range in the realm of software engineering, as my focus is <br>
-  always on the programming side of things. In terms of a specific job position, I'm very much in flux as to <br>
-  what I exactly want to do so I'm very much open to a lot of things (Note I have my eye on Web Development at the moment).
+<div class = "aboutalt"> At this stage of my life and college career, I am still in the process of gaining an internship as well as
+  a mentorship and a potential future job. My interests all range in the realm of software engineering, as my focus is
+  always on the programming side of things. In terms of a specific job position, I'm very much in flux as to
+  what I exactly want to do so I'm very much open to a lot of things (Note I have my eye on being a
+  Computer Systems Analyst and Applications Architect as well as a Computer and Information Research Scientist
+   or Computer and Information Systems Manager down the line).
 </div>
-
-<!--  Include age prefered coding languages in order and other bio resume info (MAYBE EMAIL NOT NUMBER)   -->
-<br>
-
-<!--
-<div> <font color = "white" size = "5px" > *My prefered coding languages in order: </font>  </div>
-
-<ol>
-  <font color = "white" >
-<li> Java  </li>
-<li> C++  </li>
-<li>  Python </li>
-</font>
-</ol>  -->
-
-
-
-
-<div align = "center"> <font color = "white" size = "5px" > Prefered coding languages in order:
-
-<!--<ol align = "center">-->
-
-<div>1.Java  </div>
-<div>2.C++  </div>
-<div>3.Python </div>
-
-<!--</ol>-->
 </div>
-  
-  
-  <div class = "thelist">
-<div class = "rct"> Relevant Courses Taken:  </div>
-<ul>
-<li> Intro to Computer Engineering w/ Java </li>
-<li> Computer Programs Design </li>
-<li> Data Structures C++ </li>
-<li> Discrete Systems Modeling </li>
-<li> Engineering Design and Ethics </li>
-<li> Internet Systems </li>
-</ul>
-</div>
+<br class "clearing"/>
 
-<div class = "linkback" title = "Go back to Home Page"> <a href ="index.html">  Don't Lose Touch  </a></div>
+<div class = "clickhere"> <a href = "http://ncat.interviewstream.com/link/?wNVfvTu3PJ6R" > Click here to see the rest of the interview (2021)</a> </div>
+
+<hr>
+<br class "clearing"/>
+<div class = "linkback" title = "Go back to Home Page"> <a href ="index.html">  DON'T LOSE TOUCH!  </a></div>
+
 
 </body>
 </html>
