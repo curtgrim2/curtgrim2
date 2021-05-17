@@ -1,4 +1,4 @@
-<!DOCTYPE>
+!DOCTYPE>
 <html>
 
 <head>
@@ -6,7 +6,55 @@
 <style>
 
 body{
-	background-image:url(Mist2.jpg);
+	background-image:url(3Dmist3.png);
+	/*background-color:black;*/
+	animation: fadeIn 2s;
+	animation: backgroundScroll 15s linear infinite;
+	animation-fill-mode: forwards;
+}
+
+
+
+/*
+body  {
+    color:#fff;
+    text-align:center;
+    background-image: url('https://s32.postimg.org/kkh3jlm1h/image.jpg');
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-size: 12px;
+    font-family: 'Dancing Script', cursive;
+    -webkit-animation: backgroundScroll 15s linear 1;
+    -webkit-animation-fill-mode: forwards;
+    animation: backgroundScroll 15s linear 1;
+    animation-fill-mode: forwards;
+}
+*/
+
+@keyframes backgroundScroll {
+from {background-position: 0 0;}
+to {background-position: -180px 0px;}
+
+}
+
+
+/*@-webkit-keyframes backgroundScroll {
+from {background-position: 0 0;}
+to {background-position: -180px 0px;}
+}*/
+
+
+
+
+@keyframes fadeIn{
+
+  0%{
+    opacity:0;
+  }
+  100%{
+    opacity:1;
+  }
 }
 
 div{
@@ -19,7 +67,9 @@ a{
   color:white;
 }
 .ec{
+margin-bottom:30px;
 font-size: 40px;
+text-shadow:1px 1px 2px black, 0px 0px 25px #99ffeb, 0 0 5px #00cca3;
   animation: ec 10s infinite;
   font-family: "Trebuchet MS"
 
@@ -42,7 +92,7 @@ font-size: 40px;
 }
 
 .jobs{
-	margin-bottom:60px;
+
   font-size:25px;
   border: 6px white;
   color:white
@@ -51,20 +101,86 @@ font-size: 40px;
 }
 
 .mo{
-	font-size: 30px;
-	margin-bottom:60px;
-	margin-left:25px;
+	font-size: 10px;
+	/*margin-bottom:30px;
+	margin-left:5px;*/
 	/*float:right;*/
 }
 
 .heading{
-	font-size: 35px;
-	margin-bottom: 30px;
+	font-size: 25px;
+	margin-left: 85px;
+	margin-top:20px;
+	margin-bottom:10px;
+	font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.heading2{
+	font-size: 25px;
+	margin-left: 100px;
+	margin-top:20px;
+	margin-bottom:10px;
+	font-family: "Lucida Console", "Courier New", monospace;/*font-family: Arial, Helvetica, sans-serif;*/
+}
+
+.heading3{
+	font-size: 25px;
+	margin-right: 50px;
+	margin-top:20px;
+	margin-bottom:10px;
+	font-family: "Lucida Console", "Courier New", monospace;/*font-family: "Times New Roman", Times, serif;*/
 }
 
 .linkback{
-	margin-top: 30px;
-	margin-bottom: 30px;
+	margin-top: 300px;
+	margin-bottom: 20px;
+	font-size:20px;
+	font-family: "Times New Roman", Times, serif;
+}
+
+.linkback:hover{
+	text-shadow: 0px 0px 1px black, 2px 2px 1px #03f8fc;
+}
+
+.jobs{
+margin-left:60px;
+	float:left;
+	height:30%;
+	width:30%;
+	font-size:20px;
+	font-family: 'Lobster', cursive;
+}
+
+.intern{
+margin-left:0px;
+	height:30%;
+	width:30%;
+	float:left;
+	font-size: 20px;
+	font-family: 'Lobster', cursive;
+}
+
+.ce{
+
+margin-right:60px;
+	float:right;
+	height:25%;
+	width:25%;
+	font-size: 20px;
+	font-family: 'Lobster', cursive;
+}
+
+.noclass{
+
+}
+
+.note{
+	font-family: "Times New Roman", Times, serif;
+	color:#ffff80;
+}
+
+.clearing{
+	clear:both;
 }
 </style>
 
@@ -76,35 +192,58 @@ font-size: 40px;
 <div class = "ec" align = "center"> Extracurricular </div>
 <br><br>
 
+<div class = "noclass">
 
 <div class = "jobs">
-<div class = "heading" > JOBS:  </div>
-Waiter/Bus Boy (5/2018 - 8/2018) <br>
-  Camp Counselor (6/2019 -8/2019)
-<br> *Note: Ended tenure with both jobs due <br> to college semester starting up
+<div class = "heading" > JOBS:</div>
+Waiter/Bus Boy (5/2018 - 8/2018) <br><br>
+  Camp Counselor (6/2019 -8/2019):<br>
+	Supervised children from grades kindergarden to 4th grade , Monday through Friday from 9 a.m. to 5 p.m.
+<br><br><br> <div class = "note">*Note: Ended tenure with both jobs due <br> to college semester starting up</div>
 </div>
 
-<div class = "heading"  align = "center"> INTERNSHIPS  </div>
-
-<div class = "mo"> <strong> Magnum Opus (Black Cash): </strong> <br> Start-Up company internship where I collaborated with the front end team. My duties
-consisted of creating the login page <br> as well as assisting team members in designing the
+<div class = "intern">
+<div class = "heading2" > INTERNSHIPS:  </div>
+ <strong> Magnum Opus (Black Cash): </strong>  Start-Up company internship where I collaborated with the front end team. <br>
+ My duties consisted of creating the login page as well as assisting team members in designing the<br>
 other pages. I also collaborated with the backend team where we generated functions
-which included user email/website linkage. </div>
+which <br>included user email/website linkage.
+</div>
 
-<div class = "heading"  align = "center"> CODING EVENTS  </div>
+<!--
+<div class = "intern">
+<div class = "heading"  align = "center"> INTERNSHIPS  </div>
+ <strong> Magnum Opus (Black Cash): </strong> <br> Start-Up company internship where I collaborated with the front end team. My duties
+consisted of creating the login page <br> as well as assisting team members in designing the
+other pages. I also collaborated with the backend team where we <br> generated functions
+which included user email/website linkage.
+</div>
 
-<div class = "mo">  <strong> Google Spring Virtual Coding Challenge 2020: </strong>
+-->
+<div class = "ce">
+<div class = "heading3"  align = "center"> CODING EVENTS:  </div>
+
+  <strong> Google Spring Virtual Coding Challenge 2020: </strong>
  <br> Virtual problem solving event for freshmen/sophomores.
- </div>
-
-
- <div class = "mo">
+<br>
+<br>
   <strong> Techsgiving Hackathon 2020: </strong><br>
 	 Coding competition with teams of 3 made up of college students (undergraduate and
 	 graduate) from schools across the country. Finished 17th out of 40 groups.
+<br>
+<br>
+  <strong> 2021 Google Hackathon: </strong><br>
+ 	For the Disney section; Created a concept project correlating with the entertainment industry. <br> Placed 3rd place and
+	impressed the Disney executives that were judging.
 
- </div>
-<div class = "linkback" align = "center" title = "Go back to Home Page"> <a href ="index.html">  DONT LOSE TOUCH  </a></div>
+</div>
+
+</div>
+
+
+<br class = "clearing" />
+
+<div class = "linkback" align = "center" title = "Go back to Home Page"> <a href ="personalpagetwo.html">  DONT LOSE TOUCH!  </a></div>
 <!-- If you cant figure out transitions have the whole backround turn white when you hover on DLT   -->
 </body>
 
