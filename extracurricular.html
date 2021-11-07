@@ -1,255 +1,470 @@
-!DOCTYPE>
-<html>
 
+<!DOCTYPE>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
+
+  <script>
+  var images = [
+  	'Internship that prioritizes user research along with app development; consisted of me verbally communicating with potential company associates that carry higher titles in colleges across America.Internship that prioritizes user research along with app development; consisted of me verbally communicating with potential company associates that carry higher titles in colleges across America.',
+      'Web development internship where my duties were to build websites for organizations, whether they had a concrete idea of what they wanted the webpages to look like or not.',
+      'Start-Up company internship where I collaborated with the front end team. Duties consisted of creating the login page along with assisting team members in designing the other pages. Website to be operational in January 2021.',
+
+  ];
+
+
+  var thetopics = [ /*Intern*/
+  	'JOBS',
+  	'INTERNSHIPS',
+  	'CODING EVENTS'
+  ];
+
+  var jobs =[
+  	'Waiter/Bus Boy (5/2018 - 8/2018)',
+  	  'Camp Counselor (6/2019 -8/2019):Supervised children from grades kindergarden to 4th grade , Monday through Friday from 9 a.m. to 5 p.m.'
+
+
+  ];
+
+  var codeev =[
+  	'Google Spring Virtual Coding Challenge 2020:  Virtual problem solving event for freshmen/sophomores.',
+    'Techsgiving Hackathon 2020: Coding competition with teams of 3 made up of college students (undergraduate and graduate) from schools across the country. Finished 17th out of 40 groups.',
+    '2021 Google Hackathon:For the Disney section; Created a concept project correlating with the entertainment industry. Placed 3rd place and impressed the Disney executives that were judging.'
+  ];
+
+
+
+
+
+
+  var num1 = 0;
+  let num3 =0;
+
+  /*var num = 0;
+  function next() {
+      var slider = document.getElementById('slider');
+      num++;
+      if(num >= images.length) {
+          num = 0;
+      }
+      slider.innerHTML = images[num];
+  }*/
+
+  function topicnext(){
+  	var topic = document.getElementById('jobs');
+  	num1++;
+
+  if(num1==1){
+  	document.getElementById('jobs').style.color = "blue";
+  	/*topic.innerHTML = document.write(topic.fontcolor("blue"))*/
+  	/*= 'blue';*/
+  }
+
+
+
+  	if(num1>= thetopics.length){
+  		num1=0;
+  	}
+  	topic.innerHTML = thetopics[num1];
+
+  	/*if(num1==2){
+  	/*	slider.innerHTML = codeev[num1];*/
+  	/*next(codeev);
+  	}
+
+  	if(num1==1){
+  	next(jobs);
+  	}
+
+  	if(num1==0){
+  	next(images);
+  }*/
+  }
+
+  function topicprev(){
+  	var topic = document.getElementById('jobs');
+  	num1--;
+  	if(num1<0){
+  		num1=2;
+  	}
+
+  	topic.innerHTML = thetopics[num1];
+
+  	if(num1==2){
+  	/*	slider.innerHTML = codeev[num1];*/
+  	next(codeev);
+  	}
+
+  	if(num1==1){
+  	next(jobs);
+  	}
+
+  	if(num1==0){
+  	next(images);
+  	}
+  }
+
+  var num = 0;
+
+  function next(list) {
+  	/*var slider = document.getElementById('slider');
+  	num++;
+  	if(num >= images.length) {
+  			num = 0;
+  	}
+  	slider.innerHTML = images[num];*/
+
+
+  		var slider = document.getElementById('slider');
+  		num++;
+  		if(num >= images.length) { /*images.length*/
+  				num = 0;
+  		}
+  		slider.innerHTML = images[num];
+
+
+  }
+
+  function prev(list) {
+      var slider = document.getElementById('slider');
+      num--;
+      if(num < 0) {
+          num = images.length-1; /*list.length*/
+      }
+      slider.innerHTML = images[num];
+  		/*slider.innerHTML = list[num];*/
+  }
+
+
+
+
+
+
+
+
+
+  function jobsnext(list) {
+
+  		var slider = document.getElementById('jobs');
+
+  		num++;
+
+  /*slider.style.color = "yellow";*/
+
+  		if(num >= jobs.length) { /*images.length*/
+  				num = 0;
+
+  		}
+
+  		slider.innerHTML = jobs[num];
+
+
+  }
+
+  function jobsprev(list) {
+      var slider = document.getElementById('jobs');
+      num--;
+
+
+      if(num < 0) {
+          num = jobs.length-1;
+
+  		}
+
+      slider.innerHTML = jobs[num];
+  		/*slider.innerHTML = list[num];*/
+  }
+
+
+  function codenext() {
+
+  		var slider3 = document.getElementById('codee');
+
+  		num3=num3+1;
+
+
+  	if(num3 >= codeev.length) {
+  		num3=0;
+  }
+
+
+
+  		slider3.innerHTML = codeev[num3];
+
+
+  }
+
+  function codeprev(list) {
+      var slider = document.getElementById('codee');
+      num--;
+      if(num < 0) {
+          num = codeev.length-1; /*list.length*/
+      }
+      slider.innerHTML = codeev[num];
+  		/*slider.innerHTML = list[num];*/
+  }
+
+
+
+
+  </script>
+
+
 
 <style>
 
+*{
+box-sizing: border-box;
+
+}
+
 body{
-	background-image:url(3Dmist3.png);
-	/*background-color:black;*/
-	animation: fadeIn 2s;
-	animation: backgroundScroll 15s linear infinite;
-	animation-fill-mode: forwards;
+  background-color: white;/*#384a4a;*/
 }
-
-
-
 /*
-body  {
-    color:#fff;
-    text-align:center;
-    background-image: url('https://s32.postimg.org/kkh3jlm1h/image.jpg');
-    background-repeat: repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    font-size: 12px;
-    font-family: 'Dancing Script', cursive;
-    -webkit-animation: backgroundScroll 15s linear 1;
-    -webkit-animation-fill-mode: forwards;
-    animation: backgroundScroll 15s linear 1;
-    animation-fill-mode: forwards;
-}
-*/
-
-@keyframes backgroundScroll {
-from {background-position: 0 0;}
-to {background-position: -180px 0px;}
-
-}
-
-
-/*@-webkit-keyframes backgroundScroll {
-from {background-position: 0 0;}
-to {background-position: -180px 0px;}
+*{
+box-sizing: border-box;
 }*/
 
-
-
-
-@keyframes fadeIn{
-
-  0%{
-    opacity:0;
-  }
-  100%{
-    opacity:1;
-  }
-}
-
 div{
-  color:white;
-}
-
-
-a{
-  text-decoration: none;
-  color:white;
-}
-.ec{
-margin-bottom:30px;
-font-size: 40px;
-text-shadow:1px 1px 2px black, 0px 0px 25px #99ffeb, 0 0 5px #00cca3;
-  animation: ec 10s infinite;
-  font-family: "Trebuchet MS"
-
-}
-
-@keyframes ec{
-
-  0%{
-    transform:translateY(15px);
+  color:black;
+font-size: 20px;
   }
 
-  50%{
-    transform:translateY(5px);
+  .overall{
+    transform: translateX(40%);
+    width:1000px;
+
   }
 
-  100%{
-    transform:translateY(15px);
+  .a{
+    flex-grow: 2;
+    /*padding:10%;*/
+      border: 1px solid black;
+  width:10%;
+  /*transform:translateX(50%);*/
+  margin:0px;
+  padding-bottom: 20%;
+  padding-top: 20%;
+  }
+  .b{
+      flex-grow: 2;
+    padding:20%;
+      border: 1px solid red;
+      width:5%;
+      padding-bottom: 30%;
+      padding-top: 30%;
+      /*transform:translate(85%,-10%);*/
+  }
+  .c{
+    flex-grow: 2;
+      border: 1px solid blue;
+      width:10%;
+      padding-bottom: 20%;
+      padding-top: 20%;
+      /*transform:translate(50%,-20%);*/
+  }
+  .d{
+
+    border: 1px solid teal;
+    text-align: center;
+    padding:1%;
+
   }
 
+  .d:hover{
+    background-color: #1aa38c;
+    color:white;
+    cursor:pointer;
+  }
+
+.overall{
+width:1000px;
+display: flex;
+            flex-direction: column;
 }
 
-.jobs{
+.a1{
 
-  font-size:25px;
-  border: 6px white;
-  color:white
-
+  /*transform: translate(70px,-100px);*/
+  margin:0px;
+  flex-grow: 2;
+  transform: translate(260px,-80px);
 
 }
-
-.mo{
-	font-size: 10px;
-	/*margin-bottom:30px;
-	margin-left:5px;*/
-	/*float:right;*/
+.b1{
+  /*transform: translate(-15px,-80px);*/
+  flex-grow: 2;
+  font-size:90%;
+  width:40%;
+  transform: translate(50px,-70px);
+}
+.c1{
+  /*transform: translate(10px,-80px);*/
+  flex-grow: 3;
+  transform: translate(35%,-70px);
 }
 
-.heading{
-	font-size: 25px;
-	margin-left: 85px;
-	margin-top:20px;
-	margin-bottom:10px;
-	font-family: "Lucida Console", "Courier New", monospace;
-}
+.out{
+  border: 1px solid teal;
+  flex-grow: 1;
+             display: flex;
+             flex-direction: row;
+             padding: 20px;
+             width:70%;
+             transform:translate(1%,0);
+             padding-left: 1%;
+             padding-right: 1%;
+  /*padding:0px;
+  margin:0px;
+  width:90%;
+  padding-top:1%;
+  padding-bottom:1%;*/
 
-.heading2{
-	font-size: 25px;
-	margin-left: 100px;
-	margin-top:20px;
-	margin-bottom:10px;
-	font-family: "Lucida Console", "Courier New", monospace;/*font-family: Arial, Helvetica, sans-serif;*/
-}
 
-.heading3{
-	font-size: 25px;
-	margin-right: 50px;
-	margin-top:20px;
-	margin-bottom:10px;
-	font-family: "Lucida Console", "Courier New", monospace;/*font-family: "Times New Roman", Times, serif;*/
-}
-
-.linkback{
-	margin-top: 300px;
-	margin-bottom: 20px;
-	font-size:20px;
-	font-family: "Times New Roman", Times, serif;
-}
-
-.linkback:hover{
-	text-shadow: 0px 0px 1px black, 2px 2px 1px #03f8fc;
-}
-
-.jobs{
-margin-left:60px;
-	float:left;
-	height:30%;
-	width:30%;
-	font-size:20px;
-	font-family: 'Lobster', cursive;
-}
-
-.intern{
-margin-left:0px;
-	height:30%;
-	width:30%;
-	float:left;
-	font-size: 20px;
-	font-family: 'Lobster', cursive;
-}
-
-.ce{
-
-margin-right:60px;
-	float:right;
-	height:25%;
-	width:25%;
-	font-size: 20px;
-	font-family: 'Lobster', cursive;
-}
-
-.noclass{
 
 }
 
-.note{
-	font-family: "Times New Roman", Times, serif;
-	color:#ffff80;
+
+
+.out2{
+  /*border: 1px solid teal;*/
+  flex-grow: 1;
+             display: flex;
+             flex-direction: row;
+             padding: 30px;
+             width:50%;
+             transform:translate(20%,-20%);
+             /*transform:translate(15%,-30%);*/
+             /*position:absolute;*/
 }
 
-.clearing{
-	clear:both;
+.out3{
+  border: 1px solid teal;
+  flex-grow: 1;
+             display: flex;
+             flex-direction: row;
+             padding: 20px;
+             width:70%;
+             transform: translate(1%,-41%);
+             padding-left: 1%;
+             padding-right: 1%;
+
+
 }
+
+.slide{
+  font-size:15px;
+  width:350px;
+  position: fixed;
+  transform:translate(-16%,-40%);
+}
+.slide2{
+  transform:translate(35%,-50%);
+  width:400px;
+  position: fixed;
+}
+.slide3{
+  transform:translate(20%,-40%);
+  width:400px;
+  position: fixed;
+}
+
+.left1{
+  font-size: 40px;
+  transform: translate(10px,220px);
+}
+
+.prev{
+  cursor: pointer;
+  font-size: 50px;
+  /*background-color: teal;*/
+  width:10%;
+
+
+}
+
+
+.prev1{
+  cursor: pointer;
+  font-size: 50px;
+  /*background-color: teal;*/
+  width:5%;
+  padding-top:15%;
+  /*transform: translate(8px,300px);*/
+
+}
+.next{
+  cursor: pointer;
+  font-size: 50px;
+  /*background-color: teal;*/
+  width:5%;
+  padding-top:15%;
+  padding-left:1%;
+  /*transform: translate(8px,300px);*/
+
+}
+
+.prev3{
+  cursor: pointer;
+  font-size: 50px;
+  /*background-color: teal;*/
+  width:5%;
+  padding-top:15%;
+  /*transform: translate(8px,300px);*/
+
+}
+
 </style>
-
 </head>
 
-
-
 <body>
-<div class = "ec" align = "center"> Extracurricular </div>
-<br><br>
 
-<div class = "noclass">
+<div class = "overall">
 
-<div class = "jobs">
-<div class = "heading" > JOBS:</div>
-Waiter/Bus Boy (5/2018 - 8/2018) <br><br>
-  Camp Counselor (6/2019 -8/2019):<br>
-	Supervised children from grades kindergarden to 4th grade , Monday through Friday from 9 a.m. to 5 p.m.
-<br><br><br> <div class = "note">*Note: Ended tenure with both jobs due <br> to college semester starting up</div>
+<div class = "out">
+  <div class = "prev1" onclick="jobsprev()"> < </div>
+<div class= "a">
+<div class = "a1"> JOBS </div>
+
+<div class ="slide2" id="jobs">
+Waiter/Bus Boy (5/2018 - 8/2018)
 </div>
 
-<div class = "intern">
-<div class = "heading2" > INTERNSHIPS:  </div>
- <strong> Magnum Opus (Black Cash): </strong>  Start-Up company internship where I collaborated with the front end team. <br>
- My duties consisted of creating the login page as well as assisting team members in designing the<br>
-other pages. I also collaborated with the backend team where we generated functions
-which <br>included user email/website linkage.
+
+</div>
+<div class = "next" onclick="jobsnext()"> > </div>
 </div>
 
-<!--
-<div class = "intern">
-<div class = "heading"  align = "center"> INTERNSHIPS  </div>
- <strong> Magnum Opus (Black Cash): </strong> <br> Start-Up company internship where I collaborated with the front end team. My duties
-consisted of creating the login page <br> as well as assisting team members in designing the
-other pages. I also collaborated with the backend team where we <br> generated functions
-which included user email/website linkage.
+<div class  = "out2">
+<div class = "prev1" onclick="prev()"> < </div>
+<div class= "b">
+<div class = "b1"> INTERNSHIP</div>
+<div class = "slide" id = "slider" >Internship that prioritizes user research along with app development;
+  consisted of me verbally communicating with potential company associates that carry higher titles in colleges across America.Internship that prioritizes user research along with app development;
+  consisted of me verbally communicating with potential company associates that carry higher titles in colleges across America.</div>
+</div>
+<div class = "next" onclick="next()"> > </div>
 </div>
 
--->
-<div class = "ce">
-<div class = "heading3"  align = "center"> CODING EVENTS:  </div>
-
-  <strong> Google Spring Virtual Coding Challenge 2020: </strong>
- <br> Virtual problem solving event for freshmen/sophomores.
-<br>
-<br>
-  <strong> Techsgiving Hackathon 2020: </strong><br>
-	 Coding competition with teams of 3 made up of college students (undergraduate and
-	 graduate) from schools across the country. Finished 17th out of 40 groups.
-<br>
-<br>
-  <strong> 2021 Google Hackathon: </strong><br>
- 	For the Disney section; Created a concept project correlating with the entertainment industry. <br> Placed 3rd place and
-	impressed the Disney executives that were judging.
-
+<div class  = "out3">
+  <div class = "prev1" onclick="codeprev()"> < </div>
+<div class= "c">
+<div class = "c1">CODE EVENTS</div>
+<div class ="slide3" id="codee">
+  Google Spring Virtual Coding Challenge 2020:
+  Virtual problem solving event for freshmen/sophomores.</div>
+</div>
+	<div class = "next" onclick="codenext()"> > </div>
 </div>
 
 </div>
 
+<div class = "d" tile= "Home Page"> <a href = "index.html">
+DONT LOSE TOUCH
+	</a></div>
 
-<br class = "clearing" />
-
-<div class = "linkback" align = "center" title = "Go back to Home Page"> <a href ="index.html">  DONT LOSE TOUCH!  </a></div>
-<!-- If you cant figure out transitions have the whole backround turn white when you hover on DLT   -->
 </body>
-
-<!-- Internships + Explain some clubs + Job Experience  -->
-
-
 
 
 </html>
