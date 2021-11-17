@@ -1,3 +1,4 @@
+
 <!DOCTYPE>
 <html>
 <!--<meta charset="UTF-8"> -->
@@ -5,12 +6,12 @@
 <style>
 body{
 
-background-image:url(3Dmist3.png);
+background-image:url(3Dmist5.png);
 /*background-color:black;*/
 
 animation: moving 100s linear infinte;
 animation: fadeIn 2s;
-animation: backgroundScroll 15s linear infinite;
+/*animation: backgroundScroll 15s linear infinite;*/
 animation-fill-mode: forwards;
 }
 
@@ -85,7 +86,7 @@ div{
 .info{
 
   font-size: 25px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   margin-top: 50px;
 }
 
@@ -95,12 +96,17 @@ ol li {
 }
 
 .linkback{
-  margin-top: 30px;
-  margin-bottom: 0px;
+  margin-top: 80px;
+  margin-bottom: 140px;
+  margin-right:190px;
  color:white;
 text-align:center;
 font-size:20px;
-font-family: "Times New Roman", Times, serif;
+/*font-family: "Lucida Console", "Courier New", monospace;*/ /*font-family: "Times New Roman", Times, serif;*/
+font-family: "Trebuchet MS";
+transform:translateY(200px);
+
+
 }
 
 .linkback:hover{
@@ -110,9 +116,12 @@ font-family: "Times New Roman", Times, serif;
 
 .clickhere{
   margin-top:20px;
-  margin-left:550px;
+  margin-right:160px;
+/*  margin-left:520px;*/
+text-align:center;;
 text-shadow: 1px 1px 2px black, 0px 0px 25px gold;
-font-family: "Times New Roman", Times, serif;
+/*font-family: "Lucida Console", "Courier New", monospace;*//*font-family: "Times New Roman", Times, serif;*/
+font-family: "Trebuchet MS";
 
 }
 
@@ -131,7 +140,12 @@ ul li{
 /*  margin-top:50px;
   margin-left:100px;*/
   font-size: 18px;
-font-family: "Lucida Console", "Courier New", monospace;
+/*font-family: "Lucida Console", "Courier New", monospace;*/
+font-family: "Trebuchet MS";
+}
+
+.pro{
+  /*float:left;*/
 }
 
 span{
@@ -141,21 +155,24 @@ span{
 video{
 /*  height:600px;
   width:600px;*/
-  margin-right:10px;
+  margin-left:50px;
+  margin-right:0px;
   height:50%;
   width:50%
   margin-bottom:10px;
   /*clear:right;*/
+  filter: drop-shadow(0px 0px 15px white);/*1px 1px 2px black, 0px 0px 25px #99ffeb, 0px 0px 5px #00cca3*/
 }
 .vid{
-float:left;
+/*float:left;*/
 /*clear:right;*/
 }
 .codel{
-  float:left;
+  /*float:left;*/
   margin-left:30px;
   margin-right:60px;
-  font-family: "Lucida Console", "Courier New", monospace;
+  /*font-family: "Lucida Console", "Courier New", monospace;*/
+  font-family: "Trebuchet MS";
 }
 
 .about{
@@ -166,17 +183,20 @@ float:left;
   margin-left:190px;
 color:white;
   font-size:20px;
-  font-family: 'Lobster', cursive;
+  /*font-family: 'Lobster', cursive;*/
+  font-family: "Trebuchet MS";
 
 }
 
 .aboutalt{
-
-margin-right:80px;
+margin-top:30px;
+margin-left:40px;
+margin-right:20px;
 color:white;
   font-size:20px;
-  font-family: 'Lobster', cursive;
-  float:right;
+  /*font-family: 'Lobster', cursive;*/
+  font-family: "Trebuchet MS";
+  /*float:right;*/
   height:30%;
   width:30%;
 
@@ -186,11 +206,24 @@ color:white;
 }
 
 div{
-  font-family: 'Lobster', cursive;
+  /*font-family: 'Lobster', cursive;*/
+  font-family: "Trebuchet MS";
 }
 
 ul li{
-  font-family: 'Lobster', cursive;
+  /*font-family: 'Lobster', cursive;*/
+  font-family: "Trebuchet MS";
+}
+
+
+.part1{
+  float:left;
+}
+
+.part2{
+  position:fixed;
+  transform:translateX(90%);
+  float:right;
 }
 </style>
 
@@ -198,12 +231,12 @@ ul li{
 
 <body>
 
-<h1> ABOUT ME  </h1>
+<h1 > ABOUT ME  </h1>
 
-<div class = "info" align = "center">  <span> Classification : Junior</span>   <span>Expected Graduation Date: May 2022 </span> </div>
-<hr>
+<div class = "info" align = "center">  <span> Classification : Senior</span>   <span>Expected Graduation Date: May 2022 </span> </div>
 
 <div class = "main">
+  <div class = "part1">
   <div class = "codel"> <font color = "white" size = "4px" > Prefered coding languages in order:
   <div>1.Java  </div>
   <div>2.C++  </div>
@@ -219,32 +252,46 @@ ul li{
   <li> Discrete Systems Modeling </li>
   <li> Engineering Design and Ethics </li>
   <li> Internet Systems </li>
+  <li> Algorithms Analysis</li>
   </ul>
 
 </div>
 
-<video controls>
-<source src = "InterviewAboutMe.mp4" type="video/mp4">
-<source src= "" type = "">
-</video>
 
+<div class = "pro">  Proficient in:
 
-<div class = "aboutalt"> At this stage of my life and college career, I am still in the process of gaining an internship as well as
+<ul>
+<li>HTML </li>
+<li> CSS</li>
+<li>Javascript </li>
+<li>Figma </li>
+</ul>
+and currently praticing GIMP and Photoshop
+</div>
+
+<div class = "aboutalt"> "At this stage of my life and college career, I am still in the process of gaining an internship as well as
   a mentorship and a potential future job. My interests all range in the realm of software engineering, as my focus is
   always on the programming side of things. In terms of a specific job position, I'm very much in flux as to
   what I exactly want to do so I'm very much open to a lot of things (Note I have my eye on being a
   Computer Systems Analyst and Applications Architect as well as a Computer and Information Research Scientist
-   or Computer and Information Systems Manager down the line).
+   or Computer and Information Systems Manager down the line)."
 </div>
-</div>
-<br class "clearing"/>
 
+</div>
+<div class = "part2">
+<video controls>
+<source src = "InterviewAboutMe.mp4" type="video/mp4">
+<source src= "" type = "">
+</video>
 <div class = "clickhere"> <a href = "http://ncat.interviewstream.com/link/?wNVfvTu3PJ6R" > Click here to see the rest of the interview (2021)</a> </div>
+</div>
 
-<hr>
+</div>
+
+<!--<hr>-->
 <br class "clearing"/>
 <div class = "linkback" title = "Go back to Home Page"> <a href ="index.html">  DON'T LOSE TOUCH!  </a></div>
-
+<br><br>
 
 </body>
 </html>
