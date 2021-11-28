@@ -1,408 +1,485 @@
 <!DOCTYPE>
 <html>
 
-<head>
-<style>
-body{
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-/*background-color: black;*/
-background-image:url(3Dmist3.png);
-/*  animation: fadeIn 2s;
-opacity: 0;*/
+<style>
+
+body{
+background-image:url(3Dmist5.png);
+background-size: cover;
 transition: opacity .5s;
 animation: fadeIn 2s;
-animation: backgroundScroll 15s linear infinite;
+animation: backgroundScroll 10s linear infinite;
 animation-fill-mode: forwards;
 }
 
 
+
 @keyframes backgroundScroll {
+/*from {background-position: 0 0;}
+to {background-position: -360px 0px;}*/
+
 from {background-position: 0 0;}
 to {background-position: -180px 0px;}
 
 }
 
 
- @keyframes fadeIn{
+@keyframes downer2{
+
   0%{
     opacity:0;
+    transform:translate(50px,-60px); /*-250*/
   }
 
   100%{
     opacity:1;
+    transform:translate(0px,0px);
+  }
+
+}
+
+@keyframes downer3{
+
+  0%{
+    opacity:0;
+    transform:translate(0px,-50px); /*0px*/
+  }
+
+  100%{
+    opacity:1;
+    transform:translate(0px,0px);
+  }
+
+}
+
+@keyframes downer4{
+
+  0%{
+    opacity:0;
+    transform:translate(-50px,-60px);
+  }
+
+  100%{
+    opacity:1;
+    transform:translate(0px,0px);
+  /*  transform:translate(0,-10pxx);*/
+  }
+
+}
+
+
+
+
+
+
+@keyframes downtwo1{
+  0%{
+    opacity:0;
+    transform:translate(0px,-50px);
+  }
+
+
+
+  100%{
+    opacity:1;
+    transform:translate(0px,0px);
+  }
+}
+
+@keyframes downtwo2{
+0%{
+  opacity:0;
+  transform:translateY(-100px);
+}
+
+50{
+  opacity:.05;
+
+}
+
+100%{
+  opacity:1;
+  transform:translateY(0px);
+}
+
+}
+
+@keyframes downtwo3 {
+  0%{
+    opacity:0;
+    transform:translateY(-150px);
+  }
+
+  50{
+    opacity:.1;
+
+  }
+
+  100%{
+    opacity:1;
+    transform:translateY(0px);
+  }
+}
+
+@keyframes no {
+
+
+  100%{
+    opacity:1;
+    transform:translateY(0px);
   }
 }
 
 
- .my_name{
-   color:white;
-   text-align:center;
-   text-shadow:1px 1px 2px black, 0px 0px 25px #99ffeb, 0 0 5px #00cca3;
-transform:translate(50px,260px);
-  font-size:50px;
-  animation: my_name 10s infinite;
 
-  }
-
-  @keyframes my_name{
-
-    0%{
-      transform:translateY(230px);
-    }
-
-    50%{
-      transform:translateY(210px);
-    }
-
-    100%{
-      transform:translateY(230px);
-    }
-  }
-
-
-
-  .first {
-
-transform:translate(20px,150px);
-margin-right: 20px;
-margin-left: 100px;
-margin-top: 140px;
-font-family: "Trebuchet MS";
-  }
-
-  .first ul li{
-    display:inline-block;
-  }
-
-  .first ul li a {
-   margin-right: 30px;
-   padding-left: 10px;
-    text-decoration:none;
-    font-family: "Trebuchet MS";
-  }
-
-  li{
-    /*text-shadow: 2px 2px 2px teal;*/
-  }
-
-  a{
-    color:white;
-    font-size:40px;
-  }
-
-  .first ul li a:hover{
-    /*color:black;
-    text-shadow: 2px 5px 3px white;*/
-    text-shadow:1px 1px 2px black, 0px 0px 25px #99ffeb, 0 0 5px #00cca3;
-  }
-
-/*  SECOND ROW*/
-.second {
-
-transform:translate(180px,280px);
-}
-
-.second ul li{
-  display:inline-block;
-}
-
-.second ul li a {
-  margin-right: 70px;
-   /*margin-left:40px;*/
-  padding-right: 40px;
-   padding-left:40px;
-  text-decoration:none;
-
+div{
   color:white;
-  /*font-size:40px;*/
-  font-family: "Trebuchet MS";
+  display:inline-block;
+  float:left;
+  /*font-family: "Trebuchet MS";*/
+  }
+
+.overall{
+  /*width:1000px;*/
+width:90%;
+/*transform:translateX(5%);*/
+text-align: center;
+/*margin-left:50px;*/
+}
+
+.soc{
+/*border: 1px solid red;*/
+  width:30%;
+  font-size:40px;
+padding-top:15px;
+text-align: center;
+cursor:pointer;
+
+}
+
+.soc .dropdown a{
+  display:none;
+
 }
 
 
-.second ul li a:hover{
-  color:black;
-  text-shadow: 2px 5px 3px white;
+
+.soc:hover .x{
+  display:block;
+animation: downtwo2 1.5s;
+margin-top:10px;
+
+}
+
+.soc:hover .y{
+  display:block;
+animation: downtwo1 1.5s;
+}
+
+.soc:hover .z{
+  display:block;
+animation: downtwo3 1.5s;
 }
 
 
+.dropdown{
+  /*position:absolute;
+  transform:translateX(-80px);*/
 
-a{
+  /*margin-top:6px;*/
+  padding-top:6px;
+  margin-left:180px;
+
+
+
+}
+
+.dropdown a{
+  padding: 12px 16px;
   text-decoration:none;
+  display:inline-block;
+  text-align:left;
+  width:30%;
+  font-size: 25px;
+  cursor:pointer;
+  margin-left: 5px;
+
+}
+
+
+h{
+  margin-left:100px;
+}
+
+
+.personalw{
+  /*border: 1px solid red;*/
+  width:23%;
+text-align: center;
+  padding: 15px;
+  font-size:40px;
+cursor:pointer;
+}
+
+.personalw:hover{
+  text-shadow:1px 1px 2px black, 0px 0px 25px #99ffeb, 0 0 5px #00cca3;
+}
+
+
+.aboutme{
+/*border: 1px solid red;*/
+width:23%;
+text-align: center;
+padding: 15px;
+font-size:40px;
+cursor:pointer;
+
+}
+
+.aboutme:hover{
+  text-shadow:1px 1px 2px black, 0px 0px 25px #99ffeb, 0 0 5px #00cca3;
+}
+
+.extra{
+  /*border: 1px solid red;*/
+  padding: 15px;
+  width:23%;
+text-align: center;
+  font-size: 40px;
+cursor:pointer;
+
+}
+
+
+
+.name{
+  margin-top: 15%;
+  margin-bottom:5%;
+  font-size: 55px;
+  width:90%;
+  transform:translateX(5%);
+  text-align: center;
+  font-family: "Trebuchet MS";
+
+}
+
+
+.theextras{
+  /*position:absolute;*/
+  margin-left: 30px;
+  display:none;
+
+}
+
+.theextras a{
+  padding: 12px 16px;
+  display:block;
+  text-decoration:none;
+  cursor:pointer;
+  font-size: 30px;
+  /*font-family: "Trebuchet MS";*/
+}
+
+.extra:hover .theextras{
+  display:block;
 }
 
 a:hover{
-  /*color:black;
-  text-shadow: 2px 5px 3px white;*/
-  text-shadow:1px 1px 2px black, 0px 0px 15px #99ffeb, 0 0 5px #00cca3;
+  text-shadow:1px 1px 2px black, 0px 0px 25px #99ffeb, 0 0 5px #00cca3;
 }
 
+.extra:hover  .a{
+  display:block;
+  animation: downtwo1 1.5s;
+}
+
+.extra:hover .b{
+  display:block;
+  animation: downtwo2 1.5s;
+}
+
+.extra:hover .c{
+  display:block;
+  animation: downtwo3 1.5s;
+}
+
+
+@media only screen and (max-width: 700px){
+  .soc{
+  width:100%;
+  text-align: left;
+  }
+
+  h{
+    /*display:none;*/
+  }
+
+  .dropdown a{
+    font-size: 30px;
+    margin-top:10px;
+    margin-bottom:10px;
+  }
+
+  .dropdown .x{
+    margin-top:10px;
+    margin-bottom:10px;
+  }
+
+
+  .personalw{
+  width:100%;
+  text-align: left;
+  }
+  .aboutme{
+  width:100%;
+  text-align: left;
+  }
+
+  .extra{
+    width:100%;
+    text-align: left;
+  }
 
   .soc {
-    cursor:pointer;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 50px;
-    position: relative;
-    display: inline-block;
-    color: white;
-    font-size: 40px;
-    font-family: "Trebuchet MS";
+    margin:0px;
+    width:100%;
+    text-align: left;
   }
 
-  .soc:hover{
-    text-shadow:1px 1px 2px black, 0px 0px 15px silver, 0 0 5px white;
-  }
-
-  .soc2 {
-
-    display: none;
-    position: absolute;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 50px;
-    padding-top:25px;
-    color:white;
-    font-family: "Trebuchet MS";
-    transform:translate(-250px,0px);
-    /*display: block;*/
-  }
-
-  .soc:hover .soc2 {
-    display: block;
-    animation: downer2 1.5s
-  }
-
-  .soc3{
-    display:none;
-    position:absolute;
-    color:white;
-    font-family: "Trebuchet MS";
-  /*  display: block;*/
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-bottom: 50px;
-  padding-top:25px;
-
-  }
-
-  .soc:hover .soc3{
-    display: block;
-    animation: downer3 1.5s
-  }
-
-  .soc4{
-
-    display:none;
-    position:absolute;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 50px;
-    padding-top:25px;
-    transform:translate(260px,0px);
-    color:white;
-    font-family: "Trebuchet MS";
-  /*  display: block;*/
-  }
-
-  .soc:hover .soc4{
-    display: block;
-    animation: downer4 1.5s
-
-  }
-
-  @keyframes downer2{
-
-    0%{
-      opacity:0;
-      transform:translate(-100px,-50px); /*-250*/
-    }
-
-    100%{
-      opacity:1;
-      transform:translate(-250px,0px);
-    }
-
-  }
-
-  @keyframes downer3{
-
-    0%{
-      opacity:0;
-      transform:translate(0px,-50px); /*0px*/
-    }
-
-    100%{
-      opacity:1;
-      transform:translate(0px,0px);
-    }
-
-  }
-
-  @keyframes downer4{
-
-    0%{
-      opacity:0;
-      transform:translate(200px,-50px);
-    }
-
-    100%{
-      opacity:1;
-    /*  transform:translate(0,-10pxx);*/
-    }
-
+  .soc h{
+    margin:0px;
   }
 
 
+  .soc .dropdown .x{
+    /*transform: translate(0,500px);*/
+    margin-top:10px;
+    margin-bottom:10px;
+  }
 
-span{
+  .soc .dropdown .y{
+    margin-top:10px;
+    margin-bottom:10px;
+  }
+
+  .soc .dropdown .z{
+
+    margin-top:10px;
+    margin-bottom:10px;
+  }
+
+  .soc:hover a{
+
+
+  }
+
+  .soc a{
+  /*  padding:5px;
+    margin:10px;
+    margin-top:10px;
+    margin-bottom:10px;*/
+
+  }
+
+  .soc:hover .x{
+
+    animation: no 1.5s
+
+
+  }
+
+  .soc:hover .y{
+animation: no 1.5s
+
+  }
+
+  .soc:hover .z{
+animation: no 1.5s
+
+  }
+
+  .soc .dropdown a{
+    display:inline;
+  }
+
+
+}
+
+a{
+  text-decoration: none;
   color:white;
 }
 
-.pp{
- margin-left: 130px;
-  margin-right:40px
+*{
+box-sizing: border-box;
 
-/*transform:translate(350px,-380px);*/
 }
 
-.cf{
-  margin-left: 130px;
-   margin-right:40px;
-   font-size:40px;
+div{
+
 }
 
-.cf:hover{
-  text-shadow: 0px 0px 5px red,0px 0px 25px #FF0000;
-  cursor:not-allowed;
-}
-
-.ec{
-  margin-left: 40px;
-  /* margin-right:40px*/
-  font-family: "Trebuchet MS";
-}
-
-.am{
-  margin-left: 40px;
-   margin-right:40px
-}
-
-
-.pp:onclick{
-  /*animation: fadeIn2 2s;*/
-  transition:
-}
-
-
-
-@keyframes fadeIn2{
- 0%{
-   opacity:1;
- }
-
- 50%{
-   opacity:.5;
- }
-
- 100%{
-   opacity:0;
- }
-}
-
-.itb{
-
-
-  color:white;
-  margin-left:10px;
-  font-family: system-ui;
-}
-
-.created{
-
-  color:white;
-  margin-right:10px;
-  font-family: system-ui;
-}
-
-.bottom{
-  margin-top:400px;
-}
 </style>
 
 
-<script>
-
-/*function amfadeout(){
-document.getElementById("ecurr").animate([
-  {transform: 'opacity:1'}
-  {transform: 'opacity:0'}
-], {
-  duration: 1000,
-});
-}*/
-
-/*
-function linkedinout(){
-
-}*/
-/*
-$(document).ready(function(){
-$("").click(function(){
-
-})
-})*/
-
-var test = document.getElementById('soc2');
-document.getElementById('soc2').onmouseout = function(){
-  test.classList.toggle('fadeIn2');
-}
-
-</script>
-
-
-</head>
-
 <body>
-<div class = "mist">
 
-<h1 class = "my_name"> CURTIS GRIMSLEY II </h1>  <!-- Alternate: Just 2 lines with 1st row=name and second being everything else   -->
+  <!--<div>
+    Last Website Update: 11/7 <br><br>
+        Pages under redesign:
+    <ul>
+     <li>About Me </li>
+     <li>Extracurricular </li>
 
-<nav class = "first">
-  <ul>
-  <div class = "soc">
-   Social  <!-- was span  -->
-  <div onmouseout = "linkedinout" class = "soc2" id = "soc2">
-<a target ="_blank" href = "https://www.linkedin.com/in/curtis-grimsley-ii-708a29174/">  Linkedin </a>
-  </div>
-  <div class = "soc3">
-  <a target = "_blank" href = "https://www.sololearn.com/profile/8759553">  SoloLearn </a>
+</ul>
+</div>-->
+
+<div class = "name">
+CURTIS GRIMSLEY II
 </div>
 
-<div class = "soc4">
-<a target = "_blank" href = "https://github.com/curtgrim2">  GitHub </a>
+<!--<img src = "cgii.gif"/>-->
+
+<br>
+
+<div class = "overall">
+<div class = "soc">
+<h>Socials</h>
+<br>
+<div class = "dropdown">
+  <a class = "y" href = "https://www.sololearn.com/profile/8759553">SoloLearn</a>
+<a class = "x" href = "https://www.linkedin.com/in/curtis-grimsley-ii-708a29174/">Linkedin </a>
+<a class = "z" href = "https://github.com/curtgrim2">GitHub </a>
+
 </div>
-</div>
-<!--<span class = "pp" ><a href ="personalprojects.html"> Personal Projects  </a></span>-->
-<span class = "cf" > Contact/Feedback </span>
- <!--</nav>-->
-
-<!-- Have the 4 completed links in 4 corners and the other 2 in red or just display:none or gone -->
-
-<!--<nav class = "second">-->
-  <span class = "am"><a href ="aboutme.html" onclick = "amfadeon">About Me </a></span>
-<!--  <li><a href ="">Miscellaneous </a></li>
-  <li><a href ="">Resume Request </a></li>  -->
-  <span class = "ec" id= "ecurr"><a href ="extracurricular.html"> Extracurricular </a></span>
-</ul></nav>
-
-<div class = "bottom">
-<div class = "itb" align = left> My own space...  </div>  <!-- Have it fade in and out?  -->
-<!-- Or the second quote could be "In the beginning there was nothing" ; "DLT" quote could be a link
- for other pages to go back to the home page (have a tag when you hover it to say home page)-->
 </div>
 
-<div class = "created" align = right> ...created by ME!!  </div>
+<div class = "personalw">
+<a target = "_blank" href = "https://docs.google.com/document/d/1qtMwIKUblPUp5Umg6JmjFDAW6ruo_BVtNiImz3zXgSQ/edit?usp=sharing">
+   Personal Works </a>
 </div>
+
+<div class = "aboutme">
+<a href = "aboutme.html">About Me </a>
 </div>
+<!--</div>
+-->
+
+<div class = "extra">
+<a href = "extracurricular.html"> Extracurricular </a>
+<br>
+<!--<div class = "theextras">
+<a class = "a">Coding Events  </a>
+<a class = "b">Internships  </a>
+<a class = "c">Jobs  </a>
+</div>-->
+</div>
+
+
 </body>
+
+
+
 </html>
