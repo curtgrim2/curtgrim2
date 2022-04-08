@@ -7,7 +7,7 @@
 
 <body>
 
-  <div>{
+  {
   "title": "The Basics - Networking",
   "description": "Your app fetched this from a remote endpoint!",
   "movies": [
@@ -15,7 +15,7 @@
     { "id": "2", "title": "Anemone", "releaseYear": "1985" },
     { "id": "3", "title": "Worcestershire", "releaseYear": "1999" }
   ]
-}   </div>
+}   
 
 </body>
 
