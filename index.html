@@ -404,8 +404,29 @@ animation: no 1.5s
     display:inline;
   }
 
+.name span{
+  display:none;
+}
+
+  .name::after{
+    width:8px;
+    content: 'PLEASE CHECK OUT DESKTOP VERSION!'
+
+  }
+
+  body{
+    background-image:url(coloredmist2close.png);
+    animation: fadeIn none;
+    animation: backgroundScroll none linear infinite;
+    animation-fill-mode: forwards;
+  }
+
 
 }
+
+
+/*END OF MOBILE VIEW*/
+
   
   .doss{
     
@@ -441,7 +462,7 @@ div{
 </div>-->
 
 <div class = "name">
-CURTIS GRIMSLEY II
+<span>CURTIS GRIMSLEY II</span>
 </div>
 
 <!--<img src = "cgii.gif"/>-->
