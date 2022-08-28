@@ -1,4 +1,4 @@
-<!DOCTYPE>
+ <!DOCTYPE>
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
@@ -7,9 +7,22 @@
 box-sizing: border-box;
 
 }
+
+
+html{
+  height:100%;
+  max-height:100%;
+
+  width:67%;
+  max-width:67%;
+}
 body{
 /*width:1000px;*/
 background-color: black;
+position:relative;
+left:15%;
+
+/*background-image:url(3Dmist5.png);*/
 }
 
 .paper{
@@ -20,35 +33,62 @@ div{
 }
 
 .pagetitle{
-  font-size:35px;
+
+  font-size:70px;
+  display:inline-block;
+  text-align:center;
+  margin-right:20px;
+
+
+
 }
 .note{
+
   margin-top:10px;
-  width:300px;
+  text-align:center;
+  position:relative;
+  display:block;
+
 }
 
 
 .describe{
-margin-left:30%;
+  display:inline-block;
+margin-top:5%;
+margin-bottom:5%;
   font-size: 25px;
-  width:625px;
+  /*position: relative;
+  top:70px;*/
+
+
+
+
+ width:55%;/*width:625px;*/
+
+
+
+ min-width:55%;
+
+border: solid #474747 3px;
+padding:2%;
+background-color:#2e2e2e;
 
 }
 
-.describe2{
-  display:none;
-}
+
 h{
-  font-size: 20px;
-  margin-left:0%;
-  font-size: 30px;
+
+position:relative;
+  left:40%;
+  font-size: 50px;
 }
 .inspired{
-  margin-top:30px;
-  margin-left:30%;
-  margin-bottom:100px;
-  width:500px;
+  position:relative;
+  top:30px;
+  left:34%;
+
   font-size: 20px;
+
 }
 
 .linkback{
@@ -62,39 +102,235 @@ margin-bottom:50px;
 text-align:center;
 border-radius: 30px;
 
+font-size: 20px;
+
 }
 
-a {
-  width:5px;
-  border: 1px solid grey/*#44078f*/;
+a{
+  /*font-size: 20px; */
   margin-left:40%;
   color:white;
   text-decoration: none;
-  background-image: url(3Dmist5.png);
-  /*box-shadow:5px 5px 10px white, 0px 0px 25px black, 0 0 15px white;*/
-    box-shadow:1px 1px 5px white  , 0px 0px 15px white, 1px 1px 5px black;/*#402cd4 white  ff4000*/
+  background-color:black;
+  /*background-image: url(3Dmist5.png);*/
+  box-shadow:1px 1px 5px white  , 0px 0px 15px white, 1px 1px 5px black;/*#402cd4 white  ff4000*/
+/*box-shadow:5px 5px 10px white, 0px 0px 25px black, 0 0 15px white;*/
 
+border-radius: 90%;
+padding:50px;
+padding-right:70px;
+padding-left:70px;
 
-  border-radius: 90%;
-  padding:40px;
-  padding-top: 100px;
-  padding-bottom: 100px;
-
+margin-bottom:30%;
+  position:absolute;
+top:110%;
 }
 
  .linkback2{
-transform:translate(130px,80px);
-padding:20px;
-padding-top: 50px;
-padding-bottom: 50px;
-margin-bottom:20%;
+   padding-top:60px;
+   padding-bottom:60px;
+}
+
+.linkback2:hover{
+    text-shadow: 0px 0px 1px black, 2px 2px 1px white;
+}
+
+
+ .overall .ttt:hover .title2{
+
+display:none;
+    opacity:0.5;
 
 }
 
-@media only screen and (max-width: 700px){
 
+.ttt:hover {
+
+    /*  text-shadow:1px 1px 2px black, 0px 0px 25px #99ffeb, 0 0 5px #00cca3;*/
 
 }
+
+.nick{
+display:none;
+font-size: 20px;
+cursor:default;
+
+width:60%;
+}
+
+.kanye{
+display:none;
+font-size: 20px;
+cursor:default;
+width:60%;
+}
+
+.flogg{
+display:none;
+font-size: 20px;
+cursor:default;
+width:60%;
+}
+
+.wiki{
+display:none;
+font-size: 20px;
+cursor:default;
+width:60%;
+}
+
+.crunchy{
+  display:none;
+  font-size: 20px;
+  cursor:default;
+  width:60%;
+}
+
+.ttt{
+  font-size: 35px;
+
+  margin-left: 20px;
+    margin-left: 20px;
+    cursor:pointer;
+}
+
+.title2{
+font-size: 35px;
+
+margin-left: 20px;
+  margin-left: 20px;
+      cursor:pointer;
+}
+
+.title3{
+font-size: 35px;
+
+margin-left: 20px;
+  margin-left: 20px;
+      cursor:pointer;
+}
+
+.title4{
+font-size: 35px;
+
+margin-left: 20px;
+  margin-left: 20px;
+      cursor:pointer;
+}
+
+.title5{
+font-size: 35px;
+
+margin-left: 20px;
+  margin-left: 20px;
+      cursor:pointer;
+}
+
+.crunchy{
+display:none;
+}
+
+.show{
+  display:block;
+  border:solid silver 2px;
+  padding:5%;
+  text-shadow:0px 0px 0px black, 0px 0px 25px black, 0 0 5px black;
+}
+
+.hide{
+  display:none;
+}
+
+.selected{
+  text-shadow:1px 1px 2px black, 0px 0px 25px #99ffeb, 0 0 5px #00cca3;
+
+}
+
+.forfloat{
+  /*position:relative;
+  left:0%;*/
+  display:flex;
+  justify-content:center;
+  display:inline-block;
+position:relative;
+left:120px;
+}
+
+hr{
+  color:white;
+}
+
+@media only screen and (max-width:700px){
+body{
+  /*display:flex;
+  justify-content:center;*/
+
+}
+
+html{
+/*  width:60%;
+  max-width:60%;*/
+}
+
+.paper{
+  display:block;
+}
+h{
+  position: relative;
+  left:17%;
+}
+.inspired{
+  margin-top:0px;
+  margin-left:0%;
+  margin-bottom:10%;
+  left:0%;
+
+  font-size: 20px;
+
+}
+
+.describe{
+  width:400px;
+  position:relative;
+  left:0%;
+  margin-top:10%;
+  margin-bottom:10%;
+
+}
+
+.pagetitle{
+  display:block;
+  position:static;
+    margin-right:0px;
+
+}
+
+.nick{
+  width:370px;
+}
+
+
+
+.forfloat{
+
+left:0px;
+}
+
+hr{
+  position: relative;
+  left:5%;
+}
+
+
+a{
+
+  right:20%;
+padding-right:70px;
+padding-left:70px;
+
+}
+}
+
 
 
 </style>
@@ -103,49 +339,98 @@ margin-bottom:20%;
 <body>
 <div class = "paper">
 
-  <div class = "pagetitle"> Website Description </div>
-  <div class = "note">Note: All elements including background images were created by me, Curtis Grimsley II </div>
-<div class = "describe"> In building this website, the main thing that I kept in mind was simplicity.
-  Users from all ages with a basic understanding of English should be able to navigate through this website with plenty of ease.<br>
-Sometimes less is more and I am of the mindset that an exhaustion of too many resources is unnecessary and in some cases too much for people to
-handle. I took the minamalist approach with planning and constructing this website so that I wouldn't bombard anyone who comes
-across any page.
+<div class = "forfloat">
 
-  The theme that the site is based around is the unknown realms of outer space. I thought this was appropriate with this being seen as
-  my own personal space where I can express myself and showcase my abilities.
+<div class = "note">Note: All elements including background images were created by me, Curtis Grimsley II </div>
+
+<div class = "pagetitle"> Website<br>Description </div>
+<div class = "describe"> <i> The key word in this website's construction:simplicity.
+  Users from all ages should be able to navigate through this website with ease.<br><br>
+Sometimes less is more and I am of the mindset that an over abundence of resources is unnecessary. I took the minamalist approach in
+constructing this website so that I wouldn't bombard anyone. <br><br>
+
+   I chose the unknown realms of outer space to be this websites theme because this is my own personal space where I can express myself and showcase my abilities. </i>
 
 </div>
+ </div>
 
-<div class = "describe2">
-XXXXXXXXXXXXXXXXXXXXXX
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-</div>
+<br>
 
-<div class= "inspired">
+<hr>
 <h>Inspirations</h>
-<ul>
-<li><h2> nick.com </h2> - The templates that Nickelodeon displayed the past is a huge reason why I web develop. The
-intricacies that users can explore combined with the visuals shown was nothing short of awe-inspiring for me.  </li>
-<li><h2> kanyewest.com </h2> - Remove the space theme, and at it's bare bones my site is structed similarly to Mr.West's. With a breathy feel, ton's
+<hr>
+<div class= "inspired" >
+<div id = "ttt1" class = "ttt" >nick.com <div class = "nick" id = "nick1">  - The templates that Nickelodeon displayed the past is a huge reason why I web develop. The
+intricacies that users can explore combined with the visuals shown was nothing short of awe-inspiring for me.  </div></div>
+<div class = "title2"  id ="title2"> kanyewest.com <div class = "kanye" id ="title2con" > - Remove the space theme and at it's core, my site is constructed similarly to Mr.West's. With a breathy feel, ton's
   of free space, and only provided essential information, I would not be surprised if the developers and I shared the same mindsets when
-  building both sites.</li>
-<li> <h2> wikipedia.org </h2>- In the midst of my website creation, I often referenced this site specifically to come up with clues on how to
-  display information.  </li>
-<li><h2> crunchyroll.com </h2> - The opposition of the minamalist approach I've mentioned previously, but in regards to how they juggle that information
-is highly impressive and something that I keep in mind when building websites. There's always a way to make the pieces fit!  </li>
-<li> <h2> campfloggnaw.com </h2> - My idea for having the moving mist in my background is directly attributed to the moving clouds on this site!   </li>
+  building both sites.</div></div>
+ <div class = "title3"  id ="title3"> wikipedia.org <div class = "wiki" id ="title3con">- In the midst of my website creation, I often referenced this site specifically to come up with clues on how to
+  display information.  </div></div>
+ <div class = "title4"  id ="title4"> crunchyroll.com <div class = "crunchy" id ="title4con"> - The opposition of the minamalist approach I've mentioned previously, but in regards to how they juggle that information
+is highly impressive and something that I keep in mind when building websites. There's always a way to make the pieces fit!  </div></div>
+ <div class = "title5"  id ="title5"> campfloggnaw.com <div class = "flogg" id ="title5con"> - My idea for having the moving mist in my background is directly attributed to the moving clouds on this site!
+</div></div>
 
-</ul>
-  
-  <div class = "linkback2">
-<a href = "index.html"><!--<div class = "linkback" title= "Home Page">-->
-DONT LOSE TOUCH
-</a> </div>
-  
+
 </div>
 
+
+
+<a href = "index.html">
+  <div class = "linkback2">
+HOMEPAGE</div> <!--DONT LOSE TOUCH  -->
+</a>
+
+<!-- style="display: table-cell"--> <!-- Used to make titles horizontal-->
+
+
+<!--
+<div class = "linkback2">
+<a href = "personalpagetwo(1).html">
+DONT LOSE TOUCH
+</a> </div>-->
 
 </div>
 
 </body>
+
+<script>
+
+document.getElementById("ttt1").onclick = function() {showit()};
+document.getElementById("title2").onclick = function() {showtitle2()}
+document.getElementById("title3").onclick = function() {showtitle3()};
+document.getElementById("title4").onclick = function(){showtitle4()};
+document.getElementById("title5").onclick = function(){showtitle5()};
+
+function showit(){
+  document.getElementById("nick1").classList.toggle("show");
+  document.getElementById("ttt1").classList.toggle("selected");
+    /*document.getElementById("title2con").classList.toggle("hide");*/
+}
+
+function showtitle2(){
+  document.getElementById("title2con").classList.toggle("show");
+  document.getElementById("title2").classList.toggle("selected");
+    /*document.getElementById("nick1").classList.toggle("hide");*/
+}
+
+function showtitle3(){
+  document.getElementById("title3con").classList.toggle("show");
+    document.getElementById("title3").classList.toggle("selected");
+}
+
+function showtitle4(){
+  document.getElementById("title4con").classList.toggle("show");
+    document.getElementById("title4").classList.toggle("selected");
+
+}
+
+function showtitle5(){
+  document.getElementById("title5con").classList.toggle("show");
+    document.getElementById("title5").classList.toggle("selected");
+
+}
+
+</script>
 </html>
