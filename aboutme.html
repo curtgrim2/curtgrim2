@@ -1,369 +1,352 @@
 <!DOCTYPE>
 <html>
-<!--<meta charset="UTF-8"> -->
-<head>
 <style>
+
 body{
 
-background-image:url(3Dmist5.png);
-/*background-image:url(coloredmistclose.png);*/
-background-size: cover;
-
-animation: moving 100s linear infinte;
-animation: fadeIn 2s;
-/*animation: backgroundScroll 15s linear infinite;*/
-animation-fill-mode: forwards;
+  display:grid;
+  grid-template-columns: 30% 25% auto;
+   grid-template-rows: 100%;
+     background-image:url("3Dmist5.png");
+     background-size: cover;
+     /*overflow:hidden; /*Doesn't allow scrollbar*/
 }
 
-
-@keyframes fadeIn{
-
-  0%{
-    opacity:0;
-  }
-  100%{
-    opacity:1;
-  }
-}
-
-@keyframes backgroundScroll {
-from {background-position: 0 0;}
-to {background-position: -180px 0px;}
-
-}
-
-
-a{
-  text-decoration:none;
+.part1{
+  grid-area:1/2; /*Rearanges placement by :row,column*/
+  background-color:rgba(0,0,0,.1);
+    text-align: center;
+  filter: drop-shadow(0px 0px 15px white); /*Inverse it so the other 2 parts have this shadow whil background has moving background
+  as if smoke is going from one side another?*/ /*Or continue with this design and have smoke seemingly coming from about me title*/
   color:white;
+
+
+    /*  display:grid;
+      justify-content:space-evenly;*/
+
 }
 
-@keyframes moving {
-  100%{
-    background-position:0px - 3000px;
-  }
-}
 
+.part2{
 
-h1{
-  margin-bottom:40px;
-  text-shadow: 1px 1px 2px black, 0px 0px 25px #99ffeb, 0px 0px 5px #00cca3;
+  text-align: center;
+  font-style:italic;
+  justify-content: center;
   color:white;
-  text-align:center;
-  /*transform:translateY(180px);*/
-  font-size:40px;
-animation: move 10s infinite
-}
-
-@keyframes move{
-  0%{
-    transform:translateY(15px);
-  }
-
-  50%{
-    transform:translateY(5px);
-  }
-
-  100%{
-    transform:translateY(15px);
-  }
-}
-
-
-a {
-  text-decoration:none;
-  color:white;
-}
-
-a:hover{
+  width:90%;
+  grid-area: 1/1; /**/
 
 }
 
-div{
-  color:white;
+.aboutalt{
+margin-top:50%;
+
 }
 
-.info{
 
-  font-size: 25px;
-  margin-bottom: 40px;
-  margin-top: 50px;
+ul{
+  text-align: left;
+}
+.part3{
+
+      text-align: center;
+      color:white;
+
 }
 
-ol li {
+.clickhere a{
+text-decoration: none;
+color:white;
+text-shadow: 1px 1px 2px black, 0px 0px 25px gold;
+border:solid grey 3px;
+padding:1%;
 
-  align = "center";
+}
+
+.clickhere{
+
+text-align:center;
+text-shadow: 1px 1px 2px black, 0px 0px 25px gold;
+
+color:white;
+
+}
+
+.code1{
+
+      border: solid teal 2px;
+      width:50%;
+      padding:2%;
+      cursor:pointer;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+
+}
+
+.rct{
+
+  border: solid teal 2px;
+  width:50%;
+  padding:2%;
+  cursor:pointer;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.course{
+
+    display:none;
+}
+
+.prefered{
+
+    display:none;
+}
+
+
+.show{
+  display:block;
+
+
 }
 
 .linkback{
-
-text-align: center;
-padding:1%;
-margin:1%;
-
-
-font-size: 20px;
-
-
-transform:translate(-55%,150px);
-
-
-border-radius: 90%;
-padding:30px;
-/*padding-top: 100px;*/
-padding-bottom: 100px;
-margin-bottom:30%;
-
-
-}
-
-
-
-.linkback a{
-  width:5px;
-  border: 1px solid grey/*#44078f*/;
-  margin-left:40%;
-  color:white;
-  text-decoration: none;
   background-image: url(3Dmist5.png);
   /*box-shadow:5px 5px 10px white, 0px 0px 25px black, 0 0 15px white;*/
    box-shadow:1px 1px 5px white  , 0px 0px 15px white, 1px 1px 5px black;/*#402cd4 white  ff4000*/
 
 
   border-radius: 90%;
-  padding:30px;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  margin-bottom:30%;
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+    padding-right: 5px;
+      padding-left: 5px;
+      font-size:90%;
+
+      position:relative;
+      top:40%;
+
+      text-decoration: none;
+      color:white;
+      display:none;
 
 }
 
-/*font-family: "Lucida Console", "Courier New", monospace;*/ /*font-family: "Times New Roman", Times, serif;*/
+.linkback2{
+ background-image: url(3Dmist5.png);
 
-.linkback:hover{
-  color:black;
-  text-shadow: 0px 0px 1px black, 2px 2px 1px white;
+   box-shadow:1px 1px 5px white  , 0px 0px 15px white, 1px 1px 5px black;
+
+
+  border-radius: 90%;
+width:140px;
+
+      font-size:90%;
+      border-radius: 90%;
+
+      padding-top: 60px;
+      padding-bottom: 60px;
+        padding-right: 5px;
+          padding-left: 5px;
+          font-size:90%;
+
+
+
+          text-decoration: none;
+          color:white;
+grid-area:2/2;
+          position: relative;
+          left:30%;
+          bottom:125%;
+
+    /*  position: relative;
+      left:37%;
+      bottom:250%;*/
+
+
 }
 
-.clickhere{
-  margin-top:20px;
-  margin-right:160px;
-  margin-left:200px;
-/*  margin-left:520px;*/
-text-align:center;;
-text-shadow: 1px 1px 2px black, 0px 0px 25px gold;
-/*font-family: "Lucida Console", "Courier New", monospace;*//*font-family: "Times New Roman", Times, serif;*/
-font-family: "Trebuchet MS";
+@media only screen and (max-width:700px){
+  body{
+    display:block;
+    background-color:rgba(0,0,0,.5);
+    filter: drop-shadow(0px 0px 15px white);
+     overflow:visible;
+  }
 
-}
+  .part1{
+    background-color:rgba(0,0,0,0);
 
-.clickme{
-  margin-top: 30px;
-}
+    filter: drop-shadow(0px 0px 0px white);
+  /*  grid-area: 1/2;*/
+  }
+  .part2{
+/*grid-area: 2/2;*/
+  }
 
-
-ul li{
-  color:white;
-  font-size: 15px;
-}
-
-
-.rct{
-/*  margin-top:50px;
-  margin-left:100px;*/
-  font-size: 18px;
-/*font-family: "Lucida Console", "Courier New", monospace;*/
-font-family: "Trebuchet MS";
-}
-
-.pro{
-  /*float:left;*/
-}
-
-span{
-  margin:20px;
-}
-
-video{
-/*  height:600px;
-  width:600px;*/
-  margin-left:50px;
-  margin-right:0px;
-  height:50%;
-  width:50%
-  margin-bottom:10px;
-  /*clear:right;*/
-  filter: drop-shadow(0px 0px 15px white);/*1px 1px 2px black, 0px 0px 25px #99ffeb, 0px 0px 5px #00cca3*/
-}
-.vid{
-/*float:left;*/
-/*clear:right;*/
-}
-.codel{
-  /*float:left;*/
-  margin-left:30px;
-  margin-right:60px;
-  /*font-family: "Lucida Console", "Courier New", monospace;*/
-  font-family: "Trebuchet MS";
-}
-
-.about{
-  /*margin-top: 50px;
-  margin-bottom: 50px;
-  text-align:center;*/
-  margin-right:20px;
-  margin-left:190px;
-color:white;
-  font-size:20px;
-  /*font-family: 'Lobster', cursive;*/
-  font-family: "Trebuchet MS";
-
+  video{
+    width:70%;
+  }
+  .part3{
+    margin-left:auto;
+    margin-right:auto;
+    /*grid-area: 3/2;*/
 }
 
 .aboutalt{
-margin-top:30px;
-margin-left:40px;
-margin-right:20px;
-color:white;
-  font-size:20px;
-  /*font-family: 'Lobster', cursive;*/
-  font-family: "Trebuchet MS";
-  /*float:right;*/
-  height:30%;
-  width:30%;
+  margin-top:20%;
+  margin-bottom:20%;
+
+        }
+
+        .linkback{
+        /*  display:none;*/
+        }
+
+        .linkback2{
+
+
+          background-image: url(3Dmist5.png);
+           box-shadow:1px 1px 5px white  , 0px 0px 15px white, 1px 1px 5px black;/*#402cd4 white  ff4000*/
+
+
+          border-radius: 90%;
+
+          padding-top: 60px;
+          padding-bottom: 60px;
+            padding-right: 5px;
+              padding-left: 5px;
+              font-size:90%;
+
+
+
+              text-decoration: none;
+              color:white;
+
+              position: relative;
+              top:15%;
+              left:35%;
+
+        }
 
 }
-.clearing{
-  clear:both;
-}
-
-div{
-  /*font-family: 'Lobster', cursive;*/
-  font-family: "Trebuchet MS";
-}
-
-ul li{
-  /*font-family: 'Lobster', cursive;*/
-  font-family: "Trebuchet MS";
-}
-
-
-.part1{
-  float:left;
-  position:absolute;
-}
-
-.part2{
-  position:fixed;
-  transform:translateX(90%);
-  float:right;
-  margin-bottom:20px;
-}
-
-/*
-a {
-  width:5px;
-  margin-left:40%;
-  color:white;
-  text-decoration: none;
-  background-image: url(3Dmist5.png);
-  box-shadow:5px 10px 6px #402cd4  , 0px 0px 10px #7e8b8c, -1px -2px 25px #ad1818;
-  border-radius: 90%;
-  padding:40px;
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
- .linkback2{
-   margin-top:50px;
-   margin-left:60%;
-margin-bottom:140px;
-} */
-
-
 
 </style>
 
-</head>
-
 <body>
 
-<h1 > ABOUT ME  </h1>
-
-<div class = "info" align = "center">  <span> Classification : Senior</span>   <span>Expected Graduation Date: May 2022 </span> </div>
-
-<div class = "main">
   <div class = "part1">
-  <div class = "codel"> <font color = "white" size = "4px" > Prefered coding languages in order:
-  <div>1.Java  </div>
-  <div>2.C++  </div>
-  <div>3.Python </div>
-  </font>
+    <h1 > ABOUT ME  </h1>
 
-  <br>
-  <div class = "rct"> Relevant Courses Taken:  </div>
-  <ul>
-  <li> Intro to Computer Engineering w/ Java </li>
-  <li> Computer Programs Design </li>
-  <li> Data Structures C++ </li>
-  <li> Discrete Systems Modeling </li>
-  <li> Engineering Design and Ethics </li>
-  <li> Internet Systems </li>
-  <li> Algorithms Analysis</li>
-  </ul>
 
+        <div id = "pro" class = "code1">Prefered Coding Languages:
+        <div id = "procontent" class = "prefered">
+
+    <ul>
+  <li>Java</li>
+  <li>Python</li>
+  <li>C++ and C#</li>
+
+    </ul>
+    And web development languages such as...
+          <ul>
+          <li>HTML </li>
+          <li> CSS</li>
+          <li>Javascript </li>
+          <li>Figma </li>
+          </ul>
+        <!--  and currently praticing GIMP and Photoshop -->
+
+
+        </div>
+        </div>
+
+      <br>
+      <div class = "rct" id = "courses"> Relevant Courses Taken:
+      <div class = "course" id = "coursescontent">
+
+      <ul>
+      <li> Intro to Computer Engineering w/ Java </li>
+      <li> Computer Programs Design </li>
+      <li> Data Structures C++ </li>
+      <li> Discrete Systems Modeling </li>
+      <li> Engineering Design and Ethics </li>
+      <li> Internet Systems </li>
+      <li> Algorithms Analysis</li>
+      </ul>
+    </div>
+     </div>
+
+    <!--
+    <div class = "pro">  Proficient in:
+
+    <ul>
+    <li>HTML </li>
+    <li> CSS</li>
+    <li>Javascript </li>
+    <li>Figma </li>
+    </ul>
+    and currently praticing GIMP and Photoshop
+    </div>-->
+
+
+
+
+<a class = "linkback" href = "index.html">
+
+    DONT LOSE TOUCH
+
+  </a>
+  </div>
+
+   <div class = "part2">
+     <div class = "aboutalt"> "I am in a position where a web developer role is the most appealing to me, however I'm open minded to
+       an adjacent role. I'm currently in training to brush up my backend skills to achieve my goal of being a Full Stack developer.
+       Ultimately I would love to become a Product Manager down the line or possibly either a Computer Systems Analyst, Applications Architect,
+       Computer and Information Research Scientist or Computer and Information Systems Manager."
+         </div>
 </div>
 
 
-<div class = "pro">  Proficient in:
 
-<ul>
-<li>HTML </li>
-<li> CSS</li>
-<li>Javascript </li>
-<li>Figma </li>
-</ul>
-and currently praticing GIMP and Photoshop
-</div>
-
-<div class = "aboutalt"> "At this stage of my life and college career, I am still in the process of gaining an internship as well as
-  a mentorship and a potential future job. My interests all range in the realm of software engineering, as my focus is
-  always on the programming side of things. In terms of a specific job position, I'm very much in flux as to
-  what I exactly want to do so I'm very much open to a lot of things (Note I have my eye on being a
-  Computer Systems Analyst and Applications Architect as well as a Computer and Information Research Scientist
-   or Computer and Information Systems Manager down the line)."
-</div>
-
-<div class = "linkback" title= "Home Page"><a href = "index.html">
-DONT LOSE TOUCH </a>
-</div>
-
-</div>
-<div class = "part2">
-<video controls>
-<source src = "InterviewAboutMe.mp4" type="video/mp4">
-<source src= "" type = "">
-</video>
-<div class = "clickhere"> <a href = "http://ncat.interviewstream.com/link/?wNVfvTu3PJ6R" > Click here to see the rest of the interview (2021)
-</a> </div>
-</div>
-
-</div>
-
-<!--<hr>-->
-<br class "clearing"/>
-<br class "clearing"/>
-<!--<div class = "linkback" title= "Home Page"><a href = "index.html">
-DONT LOSE TOUCH </a>
-</div>-->
+  <div class = "part3">
+  <video controls>
+  <source src = "InterviewAboutMe.mp4" type="video/mp4">
+  <source src= "" type = "">
+  </video>
+  <div class = "clickhere"> <a href = "http://ncat.interviewstream.com/link/?wNVfvTu3PJ6R" > Click here to see the rest of the interview (2021)
+  </a> </div>
+  </div>
 
 
-<!--
-<div class = "linkback2">
-<a href = "index.html">
-DONT LOSE TOUCH
-</a> </div> -->
 
-<br><br>
+  <a class = "linkback2" href = "personalpagetwo(1).html">
+
+      DONT LOSE TOUCH
+
+    </a>
+
+
 
 </body>
+
+<script>
+
+document.getElementById("pro").onclick = function() {myFunction()};
+document.getElementById("courses").onclick = function () {coursefunc()};
+
+function myFunction(){
+  console.log("Help");
+  document.getElementById("procontent").classList.toggle("show");
+}
+
+function coursefunc(){
+  document.getElementById("coursescontent").classList.toggle("show");
+}
+
+
+</script>
+
 </html>
