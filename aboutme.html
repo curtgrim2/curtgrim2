@@ -2,14 +2,26 @@
 <html>
 <style>
 
+
+html{
+  display:flex;
+}
 body{
 
+
+     background-image:url("3Dmist5.png");
+     background-size: cover;
+    overflow:hidden;  /*Doesn't allow scrollbar*/
+
+
+}
+
+.all{
   display:grid;
   grid-template-columns: 30% 25% auto;
    grid-template-rows: 100%;
-     background-image:url("3Dmist5.png");
-     background-size: cover;
-     /*overflow:hidden; /*Doesn't allow scrollbar*/
+   position:relative;
+
 }
 
 .part1{
@@ -135,6 +147,9 @@ color:white;
 }
 
 .linkback2{
+display:none;
+
+
  background-image: url(3Dmist5.png);
 
    box-shadow:1px 1px 5px white  , 0px 0px 15px white, 1px 1px 5px black;
@@ -168,10 +183,40 @@ grid-area:2/2;
 
 }
 
+.linkback3{
+
+
+display:grid;
+ background-image: url(3Dmist5.png);
+
+   box-shadow:1px 1px 5px white  , 0px 0px 15px white, 1px 1px 5px black;
+
+
+  border-radius: 90%;
+width:140px;
+
+      font-size:90%;
+      border-radius: 90%;
+
+      padding-top: 60px;
+      padding-bottom: 60px;
+        padding-right: 5px;
+          padding-left: 5px;
+          font-size:90%;
+
+          text-decoration: none;
+          color:white;
+grid-area:2/3;
+
+
+
+}
+
+
 @media only screen and (max-width:700px){
-  body{
+  .all{
     display:block;
-    background-color:rgba(0,0,0,.5);
+    background-color:rgba(0,0,0,.1);
     filter: drop-shadow(0px 0px 15px white);
      overflow:visible;
   }
@@ -236,12 +281,12 @@ grid-area:2/2;
 </style>
 
 <body>
-
+<div class = "all">
   <div class = "part1">
     <h1 > ABOUT ME  </h1>
 
 
-        <div id = "pro" class = "code1">Prefered Coding Languages:
+        <div id = "pro" class = "code1">Preferred Coding Languages:
         <div id = "procontent" class = "prefered">
 
     <ul>
@@ -294,7 +339,7 @@ grid-area:2/2;
 
 
 
-<a class = "linkback" href = "index.html">
+<a class = "linkback" href = "personalpagetwo(1).html">
 
     DONT LOSE TOUCH
 
@@ -318,6 +363,12 @@ grid-area:2/2;
   </video>
   <div class = "clickhere"> <a href = "http://ncat.interviewstream.com/link/?wNVfvTu3PJ6R" > Click here to see the rest of the interview (2021)
   </a> </div>
+
+  <a class = "linkback3" href = "personalpagetwo(1).html">
+
+      DONT LOSE TOUCH
+
+    </a>
   </div>
 
 
@@ -329,7 +380,7 @@ grid-area:2/2;
     </a>
 
 
-
+</div>
 </body>
 
 <script>
