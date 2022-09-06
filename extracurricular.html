@@ -1,346 +1,63 @@
-
-
 <!DOCTYPE>
 <html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<head>
-
-  <script>
-  var images = [
-  	'Internship that prioritizes user research along with app development; consisted of me verbally communicating with potential company associates that carry higher titles in colleges across America.Internship that prioritizes user research along with app development; consisted of me verbally communicating with potential company associates that carry higher titles in colleges across America.',
-      'Web development internship where my duties were to build websites for organizations, whether they had a concrete idea of what they wanted the webpages to look like or not.',
-      'Start-Up company internship where I collaborated with the front end team. Duties consisted of creating the login page along with assisting team members in designing the other pages. Website to be operational in January 2021.',
-
-  ];
-
-
-  var thetopics = [ /*Intern*/
-  	'JOBS',
-  	'INTERNSHIPS',
-  	'CODING EVENTS'
-  ];
-
-  var jobs =[
-  	'Waiter/Bus Boy (5/2018 - 8/2018)',
-  	  'Camp Counselor (6/2019 -8/2019):Supervised children from grades kindergarden to 4th grade , Monday through Friday from 9 a.m. to 5 p.m.'
-
-
-  ];
-
-  var codeev =[
-  	'Google Spring Virtual Coding Challenge 2020:  Virtual problem solving event for freshmen/sophomores.',
-    'Techsgiving Hackathon 2020: Coding competition with teams of 3 made up of college students (undergraduate and graduate) from schools across the country. Finished 17th out of 40 groups.',
-    '2021 Google Hackathon:For the Disney section; Created a concept project correlating with the entertainment industry. Placed 3rd place and impressed the Disney executives that were judging.'
-  ];
-
-
-
-
-
-
-  var num1 = 0;
-  let num3 =0;
-
-  /*var num = 0;
-  function next() {
-      var slider = document.getElementById('slider');
-      num++;
-      if(num >= images.length) {
-          num = 0;
-      }
-      slider.innerHTML = images[num];
-  }*/
-
-  function topicnext(){
-  	var topic = document.getElementById('jobs');
-  	num1++;
-
-  if(num1==1){
-  	document.getElementById('jobs').style.color = "blue";
-  	/*topic.innerHTML = document.write(topic.fontcolor("blue"))*/
-  	/*= 'blue';*/
-  }
-
-
-
-  	if(num1>= thetopics.length){
-  		num1=0;
-  	}
-  	topic.innerHTML = thetopics[num1];
-
-  	/*if(num1==2){
-  	/*	slider.innerHTML = codeev[num1];*/
-  	/*next(codeev);
-  	}
-
-  	if(num1==1){
-  	next(jobs);
-  	}
-
-  	if(num1==0){
-  	next(images);
-  }*/
-  }
-
-  function topicprev(){
-  	var topic = document.getElementById('jobs');
-  	num1--;
-  	if(num1<0){
-  		num1=2;
-  	}
-
-  	topic.innerHTML = thetopics[num1];
-
-  	if(num1==2){
-  	/*	slider.innerHTML = codeev[num1];*/
-  	next(codeev);
-  	}
-
-  	if(num1==1){
-  	next(jobs);
-  	}
-
-  	if(num1==0){
-  	next(images);
-  	}
-  }
-
-  var num = 0;
-
-  function next(list) {
-  	/*var slider = document.getElementById('slider');
-  	num++;
-  	if(num >= images.length) {
-  			num = 0;
-  	}
-  	slider.innerHTML = images[num];*/
-
-
-  		var slider = document.getElementById('slider');
-  		num++;
-  		if(num >= images.length) { /*images.length*/
-  				num = 0;
-  		}
-  		slider.innerHTML = images[num];
-
-
-  }
-
-  function prev(list) {
-      var slider = document.getElementById('slider');
-      num--;
-      if(num < 0) {
-          num = images.length-1; /*list.length*/
-      }
-      slider.innerHTML = images[num];
-  		/*slider.innerHTML = list[num];*/
-  }
-
-
-
-
-
-
-
-
-
-  function jobsnext(list) {
-
-  		var slider = document.getElementById('jobs');
-
-  		num++;
-
-  /*slider.style.color = "yellow";*/
-
-  		if(num >= jobs.length) { /*images.length*/
-  				num = 0;
-
-  		}
-
-  		slider.innerHTML = jobs[num];
-
-
-  }
-
-  function jobsprev(list) {
-      var slider = document.getElementById('jobs');
-      num--;
-
-
-      if(num < 0) {
-          num = jobs.length-1;
-
-  		}
-
-      slider.innerHTML = jobs[num];
-  		/*slider.innerHTML = list[num];*/
-  }
-
-
-  function codenext() {
-
-  		var slider3 = document.getElementById('codee');
-
-  		num3=num3+1;
-
-
-  	if(num3 >= codeev.length) {
-  		num3=0;
-  }
-
-
-
-  		slider3.innerHTML = codeev[num3];
-
-
-  }
-
-  function codeprev(list) {
-      var slider = document.getElementById('codee');
-      num--;
-      if(num < 0) {
-          num = codeev.length-1; /*list.length*/
-      }
-      slider.innerHTML = codeev[num];
-  		/*slider.innerHTML = list[num];*/
-  }
-
-
-
-
-  </script>
-
-
 
 <style>
+::selection{
 
+    color:white;
+    background:rgba(0,0,0,.1);
 
-
-*{
-box-sizing: border-box;
 
 }
-
-
 
 body{
- /*background-color: white;*/
- /*#384a4a;*/
+  justify-content: center;
+  text-align: center;
+  background-image:url(coloredmist2close.png);
+  background-size: cover;
 
- background-image:url(coloredmist2close.png);
- background-size: cover;
+
 }
-/*
-*{
-box-sizing: border-box;
-}*/
-
-div{
-  color:white;
-font-size: 20px;
-  }
-
-  .overall{
-    transform: translateX(40%);
-    width:1000px;
-
-  }
-
-  .a{
-    flex-grow: 2;
-    /*padding:10%;*/
-      border: 2px solid #ff21b9;
-  width:10%;
-  /*transform:translateX(50%);*/
-  margin:0px;
-  padding-bottom: 20%;
-  padding-top: 20%;
-  }
-  .b{
-      flex-grow: 2;
-    padding:20%;
-      border: 2px solid red;
-      width:5%;
-      padding-bottom: 30%;
-      padding-top: 30%;
-      /*transform:translate(85%,-10%);*/
-  }
-  .c{
-    flex-grow: 2;
-      border: 2px solid blue;
-      width:10%;
-      padding-bottom: 20%;
-      padding-top: 20%;
-      /*transform:translate(50%,-20%);*/
-  }
-  .d{
-
-    border: 1px solid #1FE3D8;
-    text-align: center;
-    padding:1%;
-    width:100%;
-
-  }
-
-.d a{
-	 text-decoration:none;
-	  color:white;
-
-    width:100%;
-}
-
-  .d:hover{
-    /*background-color: #45f7cb;*/
-    cursor:pointer;
-  }
-
-	.d a:hover{
-		color:white;
-	}
 
 .overall{
-width:1000px;
-display: flex;
-            flex-direction: column;
-}
+  /*background-color: yellow;*/
+  color:white;
 
-.a1{
-
-  /*transform: translate(70px,-100px);*/
-  margin:0px;
-  flex-grow: 2;
-  transform: translate(260px,-80px);
+  /*
+  position:absolute;
+      width:1000px;
+*/
 
 }
-.b1{
-  /*transform: translate(-15px,-80px);*/
-  flex-grow: 2;
-  font-size:90%;
-  width:40%;
-  transform: translate(50px,-70px);
-}
-.c1{
-  /*transform: translate(10px,-80px);*/
-  flex-grow: 3;
-  transform: translate(35%,-70px);
-}
+
+
 
 .out{
-  border: 3px solid #1FE3D8;
-  flex-grow: 1;
-             display: flex;
-             flex-direction: row;
-             padding: 20px;
-             width:70%;
-             transform:translate(1%,0);
-             padding-left: 1%;
-             padding-right: 1%;
-  /*padding:0px;
-  margin:0px;
-  width:90%;
-  padding-top:1%;
-  padding-bottom:1%;*/
+  border:solid #1FE3D8 3px;
+  /*display: flex;
+  flex-direction: row;*/
+  width:40%;
+  height:40%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+      display:flex;
+      justify-content: center;
+      position: absolute;
+      left:27%;
 
+}
+
+.pinkborder{
+    border: 2px solid #ff21b9;
+    position:relative;
+    margin-left:auto;
+    margin-right: auto;
+
+    padding-right: 30%;
+      padding-left: 30%;
+        padding-top: 15%;
+          padding-bottom: 15%;
 
 
 }
@@ -348,219 +65,623 @@ display: flex;
 
 
 .out2{
-  /*border: 1px solid teal;*/
-  flex-grow: 1;
-             display: flex;
-             flex-direction: row;
-             padding: 30px;
-             width:50%;
-             transform:translate(20%,-20%);
-             /*transform:translate(15%,-30%);*/
-             /*position:absolute;*/
+  border:solid #1FE3D8 3px;
+  /*display: flex;
+  flex-direction: row;*/
+  width:30%;
+  height:30%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+      display:flex;
+      justify-content: center;
+      position: absolute;
+      top:45%;
+      left:32%;
+
+
+}
+.redborder{
+    border: 2px solid red;
+
 }
 
 .out3{
-  border: 3px solid #1FE3D8;
-  flex-grow: 1;
-             display: flex;
-             flex-direction: row;
-             padding: 20px;
-             width:70%;
-             transform: translate(1%,-41%);
-             padding-left: 1%;
-             padding-right: 1%;
-
+  border:solid #1FE3D8 3px;
+  display: flex;
+  flex-direction: row;
+  width:40%;
+  height:40%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+      display:flex;
+      justify-content: center;
+      position: absolute;
+      top:79%;
+      left:27%;
 
 }
+
+.blueborder{
+    border: 2px solid blue;
+  /*  margin-left: auto;
+    margin-right: auto;*/
+    /*margin-top: auto;
+    margin-bottom: auto;*/
+
+    padding-right: 30%;
+      padding-left: 30%;
+        padding-top: 10%;
+          padding-bottom: 5%;
+
+  /*  padding-bottom: 10%;  */
+
+}
+
+.slide1{
+  text-align: left;
+  font-size:1.1vw;
+}
+
 
 .slide{
-  font-size:15px;
-  width:350px;
-  position: fixed;
-  transform:translate(-16%,-40%);
-}
-.slide2{
-  transform:translate(35%,-50%);
-  width:400px;
-  position: fixed;
+  text-align: left;
+  height:20%;
+  max-height:20%;
+font-size:1.4vw;
+margin-left: auto;
+margin-right: auto;
+max-width:80%;
+padding:1%;
+
+
+  /*
+  bottom:60%;
+  right:30%;
+  */
 }
 .slide3{
-  transform:translate(20%,-40%);
-  width:400px;
-  position: fixed;
+ /*border:solid red 1px;*/
+  text-align: left;
+  height:10%;
+  max-height:10%;
+
+font-size:1.1vw;/*font-size:2.2vh; */
+width:120%;
+max-width:115%;
+padding:1%;
+padding-left: 10%;
+padding-right: 10%;
+
+margin-right: auto;
+margin-left: auto;
+margin-bottom: auto;
+
+
 }
-
-.left1{
-  font-size: 40px;
-  transform: translate(10px,220px);
-}
-
-.prev{
-  cursor: pointer;
-  font-size: 50px;
-  /*background-color: teal;*/
-  width:10%;
-
-
-}
-
 
 .prev1{
-  cursor: pointer;
-  font-size: 50px;
-  /*background-color: teal;*/
-  width:5%;
-  padding-top:15%;
-  /*transform: translate(8px,300px);*/
-  font-family: "Trebuchet MS";
-
-}
-.next{
-  cursor: pointer;
-  font-size: 50px;
-  /*background-color: teal;*/
-  width:5%;
-  padding-top:15%;
-  padding-left:1%;
-  font-family: "Trebuchet MS";
+  border:solid #ff21b9 1px;
+  margin-top:auto;
+  margin-bottom:auto;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left:2%;
+  cursor:pointer;
+  font-weight:bolder;
 
 
 }
 
+.prev1:hover{
+  color:black;
+  background-color:#ff21b9;
+}
 
 .prev2{
-  cursor: pointer;
-  font-size: 50px;
-  /*background-color: teal;*/
-  width:5%;
-  padding-top:25%;
-padding-right:7%;
-font-family: "Trebuchet MS";
-
-
+  border:solid red 1px;
+  margin-top:auto;
+  margin-bottom:auto;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left:2%;
+  cursor:pointer;
+  font-weight:bolder;
 }
-.next2{
-  cursor: pointer;
-  font-size: 50px;
-  /*background-color: teal;*/
-  width:5%;
-  padding-top:25%;
 
-  padding-left:5%;
-/*border: 1px solid black;*/
-font-family: "Trebuchet MS";
-
+.prev2:hover{
+  color:black;
+  background-color:red;
 }
 
 .prev3{
-  cursor: pointer;
-  font-size: 50px;
-  /*background-color: teal;*/
-  width:5%;
-  padding-top:15%;
-  /*transform: translate(8px,300px);*/
+  border:solid blue 1px;
+  margin-top:auto;
+  margin-bottom:auto;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left:2%;
+  cursor:pointer;
+  font-weight:bolder;
+}
+
+.prev3:hover{
+  color:black;
+  background-color:blue;
+}
+
+.next{
+  border:solid #ff21b9 1px;
+  margin-top:auto;
+  margin-bottom:auto;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-right:2%;
+  text-align: right;
+  cursor:pointer;
+    font-weight:bolder;
+}
+
+.next:hover{
+  color:black;
+  background-color:#ff21b9;
+}
+
+
+.next2{
+  border:solid red 1px;
+  margin-top:auto;
+  margin-bottom:auto;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-right:2%;
+  cursor:pointer;
+  font-weight:bolder;
 
 }
 
-@media only screen and (max-width:700px){
+.next2:hover{
+  color:black;
+  background-color:red;
+}
 
-  .overall{
+.next3{
+  border:solid blue 1px;
+  margin-top:auto;
+  margin-bottom:auto;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-right:2%;
+  cursor:pointer;
+    font-weight:bolder;
+}
 
-    width:650px;
-    transform:translateX(0%);
+.next3::selection{
 
+    color:pink;
+    background:rgba(155,155,155,.1); /*Make this blue*/
+
+
+}
+
+.next3:hover{
+  color:black;
+  background-color:blue;
+}
+
+.linkback{
+
+  display:grid;
+   background-image: url(3Dmist5.png);
+
+     box-shadow:1px 1px 5px white  , 0px 0px 15px white, 1px 1px 5px black;
+
+
+    border-radius: 90%;
+  width:135px;
+
+        font-size:90%;
+        border-radius: 90%;
+
+        padding-top: 60px;
+        padding-bottom: 60px;
+          padding-right: 5px;
+            padding-left: 5px;
+            font-size:90%;
+
+            text-decoration: none;
+            color:white;
+            position:fixed;
+            left:5%;
+            top:50%;
+
+
+}
+
+.imagelink{
+  position:absolute;
+  right:80%;
+  top:50%;
+
+}
+
+.theimg{
+  max-width: 100%;
+      height: auto;
+      width: auto;
+
+}
+
+.oldlink{
+
+  border: 1px solid #1FE3D8;
+  text-align: center;
+  padding:1%;
+  padding-top: 3%;
+  width:100%;
+  position: absolute;
+  top:127%;
+  right:0%;
+ text-decoration:none;
+ color:white;
+}
+
+.oldlink a{
+
+  color:white;
+
+  width:100%;
+}
+
+.oldlink:hover{
+  background-color: #45f7cb;
+  cursor:pointer;
+}
+
+.oldlink a:hover{
+  color:white;
+}
+
+
+@media only screen and (max-width:950px){
+
+.pinkborder{
+  padding-right: 0%;
+    padding-left: 0%;
+      padding-top: 0%;
+        padding-bottom: 0%;
+}
+
+.blueborder{
+  padding-right: 0%;
+    padding-left: 0%;
+      padding-top: 0%;
+        padding-bottom: 0%; /*Set to 0 so that the innermost border doesn't resize when changing slides*/
+}
+  .slide1{
+    font-size: 2.6vw;
   }
 
   .slide2{
-    transform:translate(15%,-50%);
-    width:270px;
-    position: fixed;
-    font-size: 14px;
-  }
+    font-size: 1.5vh;
 
-  .slide{
-    transform:translate(-20%,-40%);
-    width:270px;
-    position: fixed;
-    font-size: 14px;
   }
 
   .slide3{
-    transform:translate(3%,-50%);
-    width:400px;
-    position: fixed;
-    font-size: 14px;
-  }
-
-  .b{
-    width:5%;
-  }
-
-  .a1{
-    transform:translate(40%,-70px);
-  }
-  .b1{
+    width:80%;
+    max-width: 80%;
+    font-size: 2.6vw;
 
   }
-
-  .out2{
-    width:65%;
-    transform: translate(17px,-62px);
-  }
-
 }
 
 
 </style>
-</head>
-
 <body>
+  <div class = "overall">
 
-<div class = "overall">
+  <div class = "out">
 
-<div class = "out">
-  <div class = "prev1" onclick="jobsprev()"> < </div>
-<div class= "a">
-<div class = "a1"> JOBS </div>
+    <div class = "prev1" onclick="jobsprev()"> < </div>
+  <div class= "pinkborder">
+  <div class = "a1"> JOBS </div> <div id = "slidecount"> 1/2 </div>
 
-<div class ="slide2" id="jobs">
-Waiter/Bus Boy (5/2018 - 8/2018)
-</div>
+  <div class ="slide1" id="jobs">
+  Waiter/Bus Boy (5/2018 - 8/2018)
+  </div>
 
 
-</div>
-<div class = "next" onclick="jobsnext()"> > </div>
-</div>
+  </div>
+  <div class = "next" onclick="jobsnext()"> > </div>
+  </div>
 
-<div class  = "out2">
-<div class = "prev2" onclick="prev()">  < </div>
-<div class= "b">
-<div class = "b1"> INTERNSHIP</div>
-<div class = "slide" id = "slider" >Internship that prioritizes user research along with app development;
-  consisted of me verbally communicating with potential company associates that carry higher titles in colleges across America.Internship that prioritizes user research along with app development;
-  consisted of me verbally communicating with potential company associates that carry higher titles in colleges across America.</div>
-</div>
-<div class = "next2" onclick="next()"> > </div>
-</div>
+  <div class  = "out2">
+  <div class = "prev2" onclick="prev()">  < </div>
+  <div class= "redborder">
+  <div class = "b1"> INTERNSHIP</div> <div id = "slidecount2"> 1/3 </div>
+  <div class = "slide2" id = "slider2" >Internship that prioritizes user research along with app development;
+    consisted of me verbally communicating with potential company associates that carry higher titles in colleges across America.</div>
+  </div>
+  <div class = "next2" onclick="next()"> > </div>
+  </div>
 
-<div class  = "out3">
-  <div class = "prev1" onclick="codeprev()"> < </div>
-<div class= "c">
-<div class = "c1">CODE EVENTS</div>
-<div class ="slide3" id="codee">
-  Google Spring Virtual Coding Challenge 2020:
-  Virtual problem solving event for freshmen/sophomores.</div>
-</div>
-	<div class = "next" onclick="codenext()"> > </div>
-</div>
+  <div class  = "out3">
+    <div class = "prev3" onclick="codeprev()"> < </div>
+  <div class= "blueborder">
+  <div class = "c1">CODE EVENTS</div> <div id = "slidecount3"> 1/3 </div>
+  <div class ="slide3" id="codee">
+    Google Spring Virtual Coding Challenge 2020:
+    Virtual problem solving event for freshmen/sophomores.</div>
+  </div>
+  	<div class = "next3" onclick="codenext()"> > </div>
+  </div>
 
-</div>
 
-<a href = "index.html"><div class = "d" title= "Home Page">
+  <a class = "imagelink" href = "index.html">
+
+      <img class = "theimg" src = "blackhole3.png"/>
+
+    </a>
+
+
+<!--
+    <a class = "oldlink" href = "index.html">
 DONT LOSE TOUCH
-	</div></a>
+</a>
 
+-->
+  </div>
 </body>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+var images = [
+  'Internship that prioritizes user research along with app development; consisted of me verbally communicating with potential company associates that carry higher titles in colleges across America.',
+    'Web development internship where my duties were to build websites for organizations, whether they had a concrete idea of what they wanted the webpages to look like or not.',
+    'Start-Up company internship where I collaborated with the front end team. Duties consisted of creating the login page along with assisting team members in designing the other pages. Website to be operational in January 2021.',
+
+];
+
+
+var thetopics = [ /*Intern*/
+  'JOBS',
+  'INTERNSHIPS',
+  'CODING EVENTS'
+];
+
+var jobs =[
+  'Waiter/Bus Boy (5/2018 - 8/2018)',
+    'Camp Counselor (6/2019 -8/2019):Supervised children from grades kindergarden to 4th grade , Monday through Friday from 9 a.m. to 5 p.m.'
+
+
+];
+
+var codeev =[
+  'Google Spring Virtual Coding Challenge 2020:  Virtual problem solving event for freshmen/sophomores.',
+  'Techsgiving Hackathon 2020: Coding competition with teams of 3 made up of college students (undergraduate and graduate) from schools across the country. Finished 17th out of 40 groups.',
+  '2021 Google Hackathon:For the Disney section; Created a concept project correlating with the entertainment industry. Placed 3rd place and impressed the Disney executives that were judging.'
+];
+
+
+
+
+
+
+var num1 = 0;
+let num3 =0;
+
+/*var num = 0;
+function next() {
+    var slider = document.getElementById('slider');
+    num++;
+    if(num >= images.length) {
+        num = 0;
+    }
+    slider.innerHTML = images[num];
+}*/
+
+function topicnext(){
+  var topic = document.getElementById('jobs');
+  num1++;
+
+if(num1==1){
+  document.getElementById('jobs').style.color = "blue";
+  /*topic.innerHTML = document.write(topic.fontcolor("blue"))*/
+  /*= 'blue';*/
+}
+
+
+
+  if(num1>= thetopics.length){
+    num1=0;
+  }
+  topic.innerHTML = thetopics[num1];
+
+  /*if(num1==2){
+  /*	slider.innerHTML = codeev[num1];*/
+  /*next(codeev);
+  }
+
+  if(num1==1){
+  next(jobs);
+  }
+
+  if(num1==0){
+  next(images);
+}*/
+}
+
+function topicprev(){
+  var topic = document.getElementById('jobs');
+  num1--;
+  if(num1<0){
+    num1=2;
+  }
+
+  topic.innerHTML = thetopics[num1];
+
+  if(num1==2){
+  /*	slider.innerHTML = codeev[num1];*/
+  next(codeev);
+  }
+
+  if(num1==1){
+  next(jobs);
+  }
+
+  if(num1==0){
+  next(images);
+  }
+}
+
+var num = 0;
+
+function next(list) {
+  /*var slider = document.getElementById('slider');
+  num++;
+  if(num >= images.length) {
+      num = 0;
+  }
+  slider.innerHTML = images[num];*/
+
+
+    var slider = document.getElementById('slider2');
+    var slidecount2 = document.getElementById('slidecount2');
+    num++;
+    if(num >= images.length) { /*images.length*/
+        num = 0;
+    }
+    slider.innerHTML = images[num];
+    slidecount2.innerHTML = num+1 + "/3";
+console.log(num);
+
+}
+
+function prev(list) {
+    var slider = document.getElementById('slider2');
+      var slidecount2 = document.getElementById('slidecount2');
+    num--;
+    if(num < 0) {
+        num = images.length-1; /*list.length*/
+    }
+
+
+    slider.innerHTML = images[num];
+    slidecount2.innerHTML = num+1 + "/3";
+    console.log(num);
+    /*slider.innerHTML = list[num];*/
+}
+
+
+
+
+
+
+
+
+
+function jobsnext(list) {
+
+    var slider = document.getElementById('jobs');
+      var slidecount = document.getElementById('slidecount');
+
+    num++;
+
+/*slider.style.color = "yellow";*/
+
+    if(num >= jobs.length) { /*images.length*/
+        num = 0;
+
+    }
+
+    slider.innerHTML = jobs[num];
+      slidecount.innerHTML = num+1 + "/2";
+
+
+}
+
+function jobsprev(list) {
+    var slider = document.getElementById('jobs');
+      var slidecount = document.getElementById('slidecount');
+    num--;
+
+
+    if(num < 0) {
+        num = jobs.length-1;
+
+    }
+
+    slider.innerHTML = jobs[num];
+      slidecount.innerHTML = num+1 + "/2";
+
+}
+
+
+function codenext() {
+
+    var slider3 = document.getElementById('codee');
+      var slidecount3 = document.getElementById('slidecount3');
+
+    num3=num3+1;
+
+
+  if(num3 >= codeev.length) {
+    num3=0;
+}
+
+
+
+    slider3.innerHTML = codeev[num3];
+      slidecount3.innerHTML = num3+1 + "/3";
+      console.log(num3);
+
+
+}
+
+function codeprev(list) {
+    var slider = document.getElementById('codee');
+      var slidecount3 = document.getElementById('slidecount3');
+    num--;
+    if(num < 0) {
+        num = codeev.length-1;
+    }
+    slider.innerHTML = codeev[num];
+      slidecount3.innerHTML = num+1 + "/3";
+      console.log(num);
+
+}
+
+
+
+
+</script>
 </html>
