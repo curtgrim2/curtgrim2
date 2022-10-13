@@ -6,13 +6,16 @@
 <style>
 
 body{
-/*background-image:url(3Dmist5.png);*/
+background-image:url(3Dmist5.png);
 background-color:black;
 background-size: cover;
 transition: opacity .5s;
 animation: fadeIn 2s;
 animation: backgroundScroll 10s linear infinite;
 animation-fill-mode: forwards;
+
+
+
 }
 
 
@@ -166,6 +169,11 @@ font-family: "Trebuchet MS";
 
 .soc .dropdown a{
   display:none;
+  /*display:flex;*/
+  text-align: center;
+  /*border:1px solid white;*/
+  width:100%;
+  justify-content: center;
 
 }
 
@@ -195,7 +203,13 @@ animation: downtwo3 1.3s;
 
   /*margin-top:6px;*/
   padding-top:6px;
-  margin-left:180px;
+
+/*border:1px blue solid;*/
+display:block;
+
+width:100%;
+
+
 
 
 
@@ -205,7 +219,7 @@ animation: downtwo3 1.3s;
   padding: 12px 16px;
   text-decoration:none;
   display:inline-block;
-  text-align:left;
+  text-align:center;
   width:30%;
   font-size: 25px;
   cursor:pointer;
@@ -215,7 +229,7 @@ animation: downtwo3 1.3s;
 
 
 h{
-  margin-left:100px;
+  /*margin-left:100px;*/
 }
 
 
@@ -325,28 +339,50 @@ a:hover{
 
 
 
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 850px){
 
   .overall{
     width:100%;
+
   }
 
-  .body{
+  body{
 background-image:url(3Dmist5.png);
     animation: backgroundScroll 0s linear infinite;
-    background-image:url();
+position:absolute;
+height:100%;
 
+
+/*position:absolute;
+
+ top: 0;
+ left: 0;
+ right: 0;
+ height: 60px;
+ display: flex;
+ align-items: center;
+ background-color: #0a0a0a;
+ color: white;
+ font-weight: 600;
+ border:white 1px solid;
+*/
   }
 
   .fog{
     /*background-color: rgba(110, 110, 110,.1);*/
-  background-color:rgba(0,0,0,.1);  /*background-color:rgba(35,35,35,.1);*/
+  background-color:rgba(0,0,0,.9);  /*background-color:rgba(35,35,35,.1);*/
       filter: drop-shadow(0px 0px 10px white);
     position: absolute;
-    right:25%;
-    width:50%;
-    height:1000px;
+  /*  bottom:10%;*/
+
+
+    right:17%;
+    width:65%;
+    height:1200px;
+    padding-bottom:90%;
+
     z-index: -1;
+    padding-top:50%;
 
 
   }
@@ -358,34 +394,12 @@ padding:20%;
 font-size:45px;
 display:block;
   }
-  .soc{
-/*  width:100%;
-  text-align: left;*/
 
-/*
-  height: 500px;
-  width: 550px;
-  border-radius: 250px;
-  background-color: #4a4949;
-
-  transform:translate(0%,-60%);
-  z-index: 3;
-
-  position:relative;
-
-  border-top: 0px solid pink;
-  border-left: 0px solid transparent;
-  border-right: 0px solid transparent;
-    border-bottom: 0px solid transparent;*/
-  /*opacity: .25*/
-
-
-  }
 
 h{
-  position: absolute;
+/*  position: absolute;
  top: -30px;
- left: 40px;
+ left: 40px;*/
 }
 
 
@@ -424,6 +438,9 @@ h{
   margin-bottom:15%;
     text-shadow:1px 1px 2px black, 0px 0px 25px teal, 0 0 5px teal;
   color:teal;
+
+
+
   }
 
   .extra{
@@ -440,7 +457,7 @@ h{
   .soc {
     margin:0px;
     width:100%;
-    text-align: left;
+    text-align: center;
   }
 
   .soc h{
@@ -466,15 +483,7 @@ h{
     margin-bottom:10px;
   }
 
-  .soc:hover a{
 
-
-  }
-
-  .soc a{
-
-
-  }
 
   .soc:hover .x{
 
@@ -551,6 +560,8 @@ if (window.innerWidth >= 400) {
 
 
 </script>
+
+<div class="fog"> </div>
 <body>
 
   <!--<div>
@@ -562,7 +573,7 @@ if (window.innerWidth >= 400) {
 
 </ul>
 </div>-->
-<div class="fog"> </div>
+
 <div class = "name">
   <!--<div class = "createdby">WEBSITE CREATED BY</div>-->
 CURTIS GRIMSLEY II
