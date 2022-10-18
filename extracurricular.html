@@ -2,40 +2,39 @@
 <html>
 
 <style>
+
+
+html{
+      height:100%;
+      max-height:100%;
+    }
+
+
 ::selection{
 
     color:white;
     background:rgba(0,0,0,.1);
 
 
+
+
 }
 
 body{
-  justify-content: center;
-  text-align: center;
+
   background-image:url(coloredmist2close.png);
   background-size: cover;
-
-
-}
-
-.overall{
-  /*background-color: yellow;*/
-
-  /*
-  position:absolute;
-      width:1000px;
-*/
-color:white;
+  /*position:relative;*/
 
 }
+
+
 
 
 
 .out{
-  border:solid #1FE3D8 3px;
-  /*display: flex;
-  flex-direction: row;*/
+  /*border:solid #1FE3D8 3px;*/
+
   width:40%;
   height:40%;
   margin-left: auto;
@@ -43,232 +42,115 @@ color:white;
   padding: 20px;
       display:flex;
       justify-content: center;
-      position: absolute;
+    /*  position: absolute;*/
+
       left:27%;
 
 }
 
 .pinkborder{
-    border: 2px solid #ff21b9;
-    position:relative;
+ border: 2px solid white;
+
     margin-left:auto;
     margin-right: auto;
 
-    padding-right: 30%;
-      padding-left: 30%;
-        padding-top: 15%;
-          padding-bottom: 15%;
 
-
-}
-
-
-
-.out2{
-  border:solid #1FE3D8 3px;
-  /*display: flex;
-  flex-direction: row;*/
-  width:30%;
-  height:30%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 20px;
-      display:flex;
-      justify-content: center;
-      position: absolute;
-      top:45%;
-      left:32%;
-
-
-}
-.redborder{
-    border: 2px solid red;
-
-}
-
-.out3{
-  border:solid #1FE3D8 3px;
-  display: flex;
-  flex-direction: row;
-  width:40%;
-  height:40%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 20px;
-      display:flex;
-      justify-content: center;
-      position: absolute;
-      top:79%;
-      left:27%;
-
-}
-
-.blueborder{
-    border: 2px solid blue;
-  /*  margin-left: auto;
-    margin-right: auto;*/
-    /*margin-top: auto;
-    margin-bottom: auto;*/
-
-    padding-right: 30%;
-      padding-left: 30%;
-        padding-top: 10%;
+ padding-right: 5%;
+      padding-left: 5%;
+        padding-top: 5%;
           padding-bottom: 5%;
+position:relative;
+display:flex;
+justify-content: center;
 
-  /*  padding-bottom: 10%;  */
+width:65%;
+top:30%;
+/*left:11%;*/
+/*right:.5%;*/
+height:40%;
 
 }
+
+
+
+
 
 .slide1{
   text-align: left;
-  font-size:1.1vw;
-}
-
-
-.slide{
-  text-align: left;
-  height:20%;
-  max-height:20%;
-font-size:1.4vw;
-margin-left: auto;
-margin-right: auto;
-max-width:80%;
-padding:1%;
-
-
-  /*
-  bottom:60%;
-  right:30%;
-  */
-}
-.slide3{
- /*border:solid red 1px;*/
-  text-align: left;
-  height:10%;
-  max-height:10%;
-
-font-size:1.1vw;/*font-size:2.2vh; */
-width:120%;
-max-width:115%;
-padding:1%;
-padding-left: 10%;
-padding-right: 10%;
-
-margin-right: auto;
-margin-left: auto;
-margin-bottom: auto;
-
+  font-size:2.5vw;/*font-size:2.1vw;*/
+  /*width:300%;*/
+  width:80%;
+  position:absolute;
 
 }
+
+
+
 
 .prev1{
-  border:solid #ff21b9 1px;
+  border:dashed white 2px;
+  border-radius:50%;
+  /*padding:2.5%;*/
+
+  font-size:20px;
+
   margin-top:auto;
   margin-bottom:auto;
-  padding-top: 2%;
-  padding-bottom: 2%;
-  padding-left:2%;
+
+padding-top: 4%;
+  padding-bottom: 4%;
+  padding-left:4.5%;
+  padding-right:4.5%;
   cursor:pointer;
   font-weight:bolder;
 
+
+  position:absolute;
+  top:40%;
+  right:88%;
+  text-align:left;
 
 }
 
 .prev1:hover{
-  color:black;
-  background-color:#ff21b9;
+  border:solid white 2px;
+  color:white;
+  background-color:rgba(120, 119, 117,.3);
 }
 
-.prev2{
-  border:solid red 1px;
-  margin-top:auto;
-  margin-bottom:auto;
-  padding-top: 2%;
-  padding-bottom: 2%;
-  padding-left:2%;
-  cursor:pointer;
-  font-weight:bolder;
-}
-
-.prev2:hover{
-  color:black;
-  background-color:red;
-}
-
-.prev3{
-  border:solid blue 1px;
-  margin-top:auto;
-  margin-bottom:auto;
-  padding-top: 2%;
-  padding-bottom: 2%;
-  padding-left:2%;
-  cursor:pointer;
-  font-weight:bolder;
-}
-
-.prev3:hover{
-  color:black;
-  background-color:blue;
-}
 
 .next{
-  border:solid #ff21b9 1px;
+  border:dashed white 2px;
+  border-radius:50%;
+  /*padding:2.5%;*/
+
+  font-size:20px;
+
   margin-top:auto;
   margin-bottom:auto;
-  padding-top: 2%;
-  padding-bottom: 2%;
-  padding-right:2%;
-  text-align: right;
+
+padding-top: 4%;
+  padding-bottom: 4%;
+  padding-left:4.5%;
+  padding-right:4.5%;
   cursor:pointer;
-    font-weight:bolder;
+  font-weight:bolder;
+
+    position:absolute;
+    left:88%;
+    top:40%;
+
+
 }
 
 .next:hover{
-  color:black;
-  background-color:#ff21b9;
+  border:solid white 2px;
+  color:white;
+  background-color:rgba(120, 119, 117,.3);
 }
 
 
-.next2{
-  border:solid red 1px;
-  margin-top:auto;
-  margin-bottom:auto;
-  padding-top: 2%;
-  padding-bottom: 2%;
-  padding-right:2%;
-  cursor:pointer;
-  font-weight:bolder;
 
-}
-
-.next2:hover{
-  color:black;
-  background-color:red;
-}
-
-.next3{
-  border:solid blue 1px;
-  margin-top:auto;
-  margin-bottom:auto;
-  padding-top: 2%;
-  padding-bottom: 2%;
-  padding-right:2%;
-  cursor:pointer;
-    font-weight:bolder;
-}
-
-.next3::selection{
-
-    color:pink;
-    background:rgba(155,155,155,.1); /*Make this blue*/
-
-
-}
-
-.next3:hover{
-  color:black;
-  background-color:blue;
-}
 
 .linkback{
 
@@ -299,58 +181,183 @@ margin-bottom: auto;
 
 }
 
-.imagelink{
+
+
+
+
+.overall{
+  display:grid;
+/*  grid-template-columns: 30% 25% auto;
+   grid-template-rows: 70%;
+   position:relative;*/
+   grid-template-columns: 100% 100% 100%;
+ grid-template-rows: 15% 48% 27%;
+ height:100%;
+ width:100%;
+ position:relative;
+}
+
+.p1{
+  grid-area:1/1;
+  background-color: rgba(92, 255, 231,.2);
+  display:grid;
+  grid-template-columns: 33% auto 33%;
+  color:white;
+  text-align:center;
+
+}
+
+.jobt{
+  display: inline;
+  border:1px #1FE3D8 solid;
+  text-align:center;
+  padding-top:8%;
+}
+
+.internt{
+  display: inline;
+    border:1px #1FE3D8 solid;
+    padding-top:8%;
+}
+
+.codet{
+  display: inline;
+  border:1px #1FE3D8 solid;
+  padding-top:8%;
+}
+
+
+.jobt:hover{
+  cursor:pointer;
+
+  /*background-color: #1FE3D8; /*rgba(92, 255, 231,.5)*/
+  /*color:black;*/
+
+  border:4px #1FE3D8 solid;
+  color:white;
+}
+
+.internt:hover{
+cursor:pointer;
+border:4px #1FE3D8 solid;
+color:white;
+}
+
+.codet:hover{
+cursor:pointer;
+border:4px #1FE3D8 solid;
+color:white;
+}
+
+
+.p2{
+  grid-area:2/1;
+  background-image:url(coloredmist2close.png);
+  color:white;
+  position:relative;
+  height:100%;
+  width:100%;
+}
+.maintitle{
+  margin-right:6%;
+  /*font-size:30px;*/font-size:1.8vw;
+  border:2px solid #1FE3D8;
+  padding-top:2%;
+  padding-bottom:3%;
   position:absolute;
-  right:80%;
-  top:50%;
+/*  bottom:85%;*/
+bottom:95%;
+  left:25%;
+  width:50%;
+  text-align: center;
+}
+
+#slidecount{
+  border:2px white solid;
+  width:10%;
+padding-top:1%;
+  padding-bottom:1%;
+  text-align: center;
+  text-shadow:0 0 3px yellow, 0 0 2px #0000FF;/* 0px 0px 8px gray, 0 0 5px #0000FF;*/
+  font-size:30px;
+  position:absolute;
+  top:97%;
+  right:45%;
+
+}
+
+.p3{
+  grid-area:3/1;
+  /*background-color:#1FE3D8;*/
+
+}
+
+.imagelink{
+ position:absolute;
+ top:70%;
+left:65%;
+
 
 }
 
 .theimg{
-  max-width: 100%;
+  /*max-width: 100%;
+      height: 260px;
+      width: 260px;*/
+ max-width: 100%;
       height: auto;
       width: auto;
 
 }
 
-.oldlink{
+@media only screen and (max-width:600px){
+  .imagelink{
+    left:0%;
+    margin-right:auto;
+    margin-left:30%;
+  }
+  .theimg{
 
-  border: 1px solid #1FE3D8;
-  text-align: center;
-  padding:1%;
-  padding-top: 3%;
-  width:100%;
-  position: absolute;
-  top:127%;
-  right:0%;
- text-decoration:none;
- color:white;
+   max-width: 100%;
+        height: 80%;
+        width: 80%;
+  }
 }
-
-.oldlink a{
-
-  color:white;
-
-  width:100%;
-}
-
-.oldlink:hover{
-  background-color: #45f7cb;
-  cursor:pointer;
-}
-
-.oldlink a:hover{
-  color:white;
-}
-
-
 @media only screen and (max-width:950px){
 
+  .pinkborder{
+    top:25%;
+  }
+  .slide1{
+
+    font-size:20px;/*font-size:2.1vw;*/
+
+
+  }
+
+  #maintitle{
+    font-size:3.8vw;
+  }
+
+  #slidecount{
+    font-size:4vw;
+  }
+
+
+}
+/*
+@media only screen and (max-width:950px){
+.out{
+  border:none;
+  position:static;
+}
 .pinkborder{
   padding-right: 0%;
     padding-left: 0%;
       padding-top: 0%;
         padding-bottom: 0%;
+        border:none;
+
 }
 
 .blueborder{
@@ -358,79 +365,79 @@ margin-bottom: auto;
     padding-left: 0%;
       padding-top: 0%;
         padding-bottom: 0%; /*Set to 0 so that the innermost border doesn't resize when changing slides*/
-}
+/*}
   .slide1{
-    font-size: 2.6vw;
+    font-size: 10px;
   }
 
-  .slide2{
-    font-size: 1.5vh;
 
-  }
-
-  .slide3{
-    width:80%;
-    max-width: 80%;
-    font-size: 2.6vw;
-
-  }
-}
-
-
+}*/
 </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <body>
   <div class = "overall">
+<div class="p1">
 
-  <div class = "out">
+  <div class="jobt" onclick="changetopics1()">JOBS</div>
+  <div class="internt" onclick="changetopics2()">INTERNSHIPS </div>
+  <div class ="codet" onclick="changetopics3()">CODING EVENTS </div>
 
-    <div class = "prev1" onclick="jobsprev()"> < </div>
-  <div class= "pinkborder">
-  <div class = "a1"> JOBS </div> <div id = "slidecount"> 1/2 </div>
+</div>
+<div class="p2">
 
-  <div class ="slide1" id="jobs">
+
+<div class = "prev1" onclick="newprev()"> < </div>
+
+<div class = "next" onclick="newnext()"> > </div>
+  <!--<div class = "out">-->
+
+
+
+
+
+  <div class= "pinkborder"> <!--  <div class= "pinkborder"> -->
+
+<div class = "maintitle" id="maintitle"> JOBS </div>
+  <div class ="slide1" id="slide1">
   Waiter/Bus Boy (5/2018 - 8/2018)
   </div>
-
-
-  </div>
-  <div class = "next" onclick="jobsnext()"> > </div>
-  </div>
-
-  <div class  = "out2">
-  <div class = "prev2" onclick="prev()">  < </div>
-  <div class= "redborder">
-  <div class = "b1"> INTERNSHIP</div> <div id = "slidecount2"> 1/3 </div>
-  <div class = "slide2" id = "slider2" >Internship that prioritizes user research along with app development;
-    consisted of me verbally communicating with potential company associates that carry higher titles in colleges across America.</div>
-  </div>
-  <div class = "next2" onclick="next()"> > </div>
-  </div>
-
-  <div class  = "out3">
-    <div class = "prev3" onclick="codeprev()"> < </div>
-  <div class= "blueborder">
-  <div class = "c1">CODE EVENTS</div> <div id = "slidecount3"> 1/3 </div>
-  <div class ="slide3" id="codee">
-    Google Spring Virtual Coding Challenge 2020:
-    Virtual problem solving event for freshmen/sophomores.</div>
-  </div>
-  	<div class = "next3" onclick="codenext()"> > </div>
+  <!--</div> --><!--<div class = "next" onclick="jobsnext()"> > </div> -->
+  <div id = "slidecount"> 1/2 </div>
   </div>
 
 
+<!--<div id = "slidecount"> 1/2 </div>-->
+
+</div>
+
+
+
+
+<div class="p3">
   <a class = "imagelink" href = "index.html">
 
-      <img class = "theimg" src = "blackhole3.png"/>
+        <img class = "theimg" src = "blackhole3.png"/>
 
-    </a>
+      </a>
+</div>
 
-
-<!--
-    <a class = "oldlink" href = "index.html">
-DONT LOSE TOUCH
-</a>
-
--->
   </div>
 </body>
 
@@ -464,6 +471,18 @@ DONT LOSE TOUCH
 
 
 <script>
+
+var thetopics = [ /*Intern*/
+  'JOBS',
+  'INTERNSHIPS',
+  'CODING EVENTS'
+];
+
+var interntitles =[
+'Drakeford Scott & Associates',
+'Paul Pearson Internship',
+'Black.Coin'
+];
 var images = [
   'Internship that prioritizes user research along with app development; consisted of me verbally communicating with potential company associates that carry higher titles in colleges across America.',
     'Web development internship where my duties were to build websites for organizations, whether they had a concrete idea of what they wanted the webpages to look like or not.',
@@ -472,12 +491,10 @@ var images = [
 ];
 
 
-var thetopics = [ /*Intern*/
-  'JOBS',
-  'INTERNSHIPS',
-  'CODING EVENTS'
+var jobtitles =[
+  'Waiter/Bus Boy',
+  'Camp Counselor'
 ];
-
 var jobs =[
   'Waiter/Bus Boy (5/2018 - 8/2018)',
     'Camp Counselor (6/2019 -8/2019):Supervised children from grades kindergarden to 4th grade , Monday through Friday from 9 a.m. to 5 p.m.'
@@ -485,19 +502,173 @@ var jobs =[
 
 ];
 
+
+var codeetitle=[
+'Google Spring Virtual Coding Challenge 2020',
+'Techsgiving Hackathon 2020',
+'2021 Google Hackathon'
+];
 var codeev =[
   'Google Spring Virtual Coding Challenge 2020:  Virtual problem solving event for freshmen/sophomores.',
   'Techsgiving Hackathon 2020: Coding competition with teams of 3 made up of college students (undergraduate and graduate) from schools across the country. Finished 17th out of 40 groups.',
   '2021 Google Hackathon:For the Disney section; Created a concept project correlating with the entertainment industry. Placed 3rd place and impressed the Disney executives that were judging.'
 ];
 
-
-
-
-
-
 var num1 = 0;
 let num3 =0;
+var num = 0;
+var selectedtopic='jobs';
+
+var slider = document.getElementById('slide1');
+var slidecount2 = document.getElementById('slidecount');
+var topictitles1 = document.getElementById('maintitle');
+
+
+
+
+
+
+
+/*Plan: When you click a topic, it triggers an event that changes the slide choice*/
+function changetopics(){
+var selectedtopic;
+if(selectedtopic=='jobs'){
+
+}
+
+if(selectedtopic=='interns'){
+
+}
+
+if(selectedtopic=='code'){
+
+}
+
+}
+
+
+function changetopics1(){
+selectedtopic = 'jobs';
+num=0;
+console.log(selectedtopic);
+whatyousee(selectedtopic);
+
+}
+
+function changetopics2(){
+selectedtopic = 'interns';
+num=0;
+console.log(selectedtopic);
+whatyousee(selectedtopic);
+
+}
+
+function changetopics3(){
+selectedtopic = 'code';
+num=0;
+console.log(selectedtopic);
+whatyousee(selectedtopic);
+}
+
+function whatyousee(selectedtopic){
+  if(selectedtopic=='jobs'){
+    topictitles1.innerHTML = 'JOBS';
+    slider.innerHTML = jobs[num];
+    slidecount2.innerHTML = num+1 + "/"+ jobs.length;
+  }
+
+  if(selectedtopic=='interns'){
+    topictitles1.innerHTML = 'INTERNSHIPS'
+    slider.innerHTML = images[num];
+    slidecount2.innerHTML = num+1 + "/"+ images.length;
+  }
+
+  if(selectedtopic=='code'){
+    topictitles1.innerHTML = 'CODING EVENTS'
+    slider.innerHTML = codeev[num];
+    slidecount2.innerHTML = num+1 + "/"+ codeev.length;
+  }
+}
+
+
+function newprev(){
+
+  if(selectedtopic=='jobs'){
+
+    num--;
+    if(num < 0) {
+        num = jobs.length-1;
+    }
+    slider.innerHTML = jobs[num];
+    slidecount2.innerHTML = num+1 + "/"+ jobs.length;
+  }
+
+
+  if(selectedtopic=='interns'){
+
+    num--;
+    if(num < 0) {
+        num = images.length-1;
+    }
+    slider.innerHTML = images[num];
+    slidecount2.innerHTML = num+1 + "/"+ images.length;
+  }
+
+
+  if(selectedtopic=='code'){
+
+    num--;
+    if(num < 0) {
+        num = codeev.length -1;
+    }
+    slider.innerHTML = codeev[num];
+    slidecount2.innerHTML = num+1 + "/"+ codeev.length;
+  }
+
+
+}
+
+
+
+
+function newnext(){
+
+  if(selectedtopic=='jobs'){
+
+    num++;
+    if(num >= jobs.length) {
+        num = 0;
+    }
+    slider.innerHTML = jobs[num];
+    slidecount2.innerHTML = num+1 + "/"+ jobs.length;
+  }
+
+
+  if(selectedtopic=='interns'){
+
+    num++;
+    if(num >= images.length) {
+        num = 0;
+    }
+    slider.innerHTML = images[num];
+    slidecount2.innerHTML = num+1 + "/"+ images.length;
+  }
+
+
+  if(selectedtopic=='code'){
+
+    num++;
+    if(num >= codeev.length) {
+        num = 0;
+    }
+    slider.innerHTML = codeev[num];
+    slidecount2.innerHTML = num+1 + "/"+ codeev.length;
+  }
+
+
+}
+
+
 
 
 function topicnext(){
@@ -506,8 +677,6 @@ function topicnext(){
 
 if(num1==1){
   document.getElementById('jobs').style.color = "blue";
-  /*topic.innerHTML = document.write(topic.fontcolor("blue"))*/
-  /*= 'blue';*/
 }
 
 
@@ -542,7 +711,7 @@ function topicprev(){
   }
 }
 
-var num = 0;
+
 
 function next(list) {
 
