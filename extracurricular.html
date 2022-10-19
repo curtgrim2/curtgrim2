@@ -191,7 +191,7 @@ padding-top: 4%;
    grid-template-rows: 70%;
    position:relative;*/
    grid-template-columns: 100% 100% 100%;
- grid-template-rows: 15% 48% 27%;
+ grid-template-rows: 10% 48% 27%;
  height:100%;
  width:100%;
  position:relative;
@@ -202,6 +202,7 @@ padding-top: 4%;
   background-color: rgba(92, 255, 231,.2);
   display:grid;
   grid-template-columns: 33% auto 33%;
+
   color:white;
   text-align:center;
 
@@ -210,20 +211,23 @@ padding-top: 4%;
 .jobt{
   display: inline;
   border:1px #1FE3D8 solid;
-  text-align:center;
-  padding-top:8%;
+
+  padding-top:4%;
+  padding-bottom:4%;
 }
 
 .internt{
   display: inline;
     border:1px #1FE3D8 solid;
-    padding-top:8%;
+    padding-top:4%;
+    padding-bottom:4%;
 }
 
 .codet{
   display: inline;
   border:1px #1FE3D8 solid;
-  padding-top:8%;
+  padding-top:4%;
+  padding-bottom:4%;
 }
 
 
@@ -310,6 +314,14 @@ left:65%;
 
 }
 
+.userselect{
+  border:pink 2px solid;
+}
+
+.unselect{
+border:1px #1FE3D8 solid;
+}
+
 @media only screen and (max-width:600px){
   .imagelink{
     left:0%;
@@ -324,6 +336,16 @@ left:65%;
   }
 }
 @media only screen and (max-width:950px){
+
+  .overall{
+    display:grid;
+
+     grid-template-columns: 100% 100% 100%;
+   grid-template-rows: 10% 70% 20%;
+   height:100%;
+   width:100%;
+   position:relative;
+  }
 
   .pinkborder{
     top:25%;
@@ -345,33 +367,7 @@ left:65%;
 
 
 }
-/*
-@media only screen and (max-width:950px){
-.out{
-  border:none;
-  position:static;
-}
-.pinkborder{
-  padding-right: 0%;
-    padding-left: 0%;
-      padding-top: 0%;
-        padding-bottom: 0%;
-        border:none;
 
-}
-
-.blueborder{
-  padding-right: 0%;
-    padding-left: 0%;
-      padding-top: 0%;
-        padding-bottom: 0%; /*Set to 0 so that the innermost border doesn't resize when changing slides*/
-/*}
-  .slide1{
-    font-size: 10px;
-  }
-
-
-}*/
 </style>
 
 
@@ -395,9 +391,9 @@ left:65%;
   <div class = "overall">
 <div class="p1">
 
-  <div class="jobt" onclick="changetopics1()">JOBS</div>
-  <div class="internt" onclick="changetopics2()">INTERNSHIPS </div>
-  <div class ="codet" onclick="changetopics3()">CODING EVENTS </div>
+  <div class="jobt" id="jobtid" onclick="changetopics1()">JOBS</div>
+  <div class="internt" id="interntid" onclick="changetopics2()">INTERNSHIPS </div>
+  <div class ="codet" id="codetid" onclick="changetopics3()">CODING EVENTS </div>
 
 </div>
 <div class="p2">
@@ -431,7 +427,7 @@ left:65%;
 
 
 <div class="p3">
-  <a class = "imagelink" href = "index.html">
+  <a class = "imagelink" href = "personalpagetwo(1).html">
 
         <img class = "theimg" src = "blackhole3.png"/>
 
@@ -471,6 +467,29 @@ left:65%;
 
 
 <script>
+/*
+document.getElementById("jobtid").onclick= function(){jobselect()};
+document.getElementById("interntid").onclick = function(){internselect()};
+document.getElementById("codetid").onclick=function(){codeselect()};
+
+
+function jobselect(){
+  document.getElementById("jobtid").classList.toggle("userselect");
+  document.getElementById("interntid").classList.toggle("unselect");
+  document.getElementById("codetid").classList.toggle("unselect");
+}
+
+function internselect(){
+  document.getElementById("interntid").classList.toggle("userselect");
+  document.getElementById("jobtid").classList.toggle("unselect");
+  document.getElementById("codetid").classList.toggle("unselect");
+}
+
+function codeselect(){
+  document.getElementById("codetid").classList.toggle("userselect");
+  document.getElementById("jobtid").classList.toggle("unselect");
+document.getElementById("interntid").classList.toggle("unselect");
+}*/
 
 var thetopics = [ /*Intern*/
   'JOBS',
