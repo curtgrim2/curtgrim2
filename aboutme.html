@@ -37,16 +37,10 @@ background-color: #282828;  /*background-color: black;*/
 .b{
     border:2px solid #cccdcf;
     margin:auto;
-  /*  display: flex;
-    justify-content: center;
-    align-items:center;*/
      height:90%;
       width:90%;
-    /*  position:absolute;*/
-    /*  display: flex;
-      justify-content: center;*/
-      position:relative;
       background-color: #161616;
+      position:relative;
 }
 .codinglanguages{
   display:inline;
@@ -63,7 +57,6 @@ background-color: #282828;  /*background-color: black;*/
 }
 
 .ul2{
-  /*position:absolute;*/
   float:left;
 }
 
@@ -126,6 +119,12 @@ left:75%;
 bottom:10%;
 }
 
+.imagelink2{
+display:none;
+
+}
+
+
 @media only screen and (max-width:1000px){
 
   body{
@@ -165,10 +164,20 @@ bottom:10%;
 
 .ul1{
   grid-area:1/1;
+
 }
 
 .ul2{
+  /*grid-area:3/1;*/
+  display:inline;
+  font-size: 80%;
+}
+
+.formobile{
+  position:relative;
   grid-area:3/1;
+  display:inline;
+
 }
 .c{
   grid-area:2/1;
@@ -182,26 +191,27 @@ bottom:10%;
 
 .imagelink{
   display:none;
+
 }
 
 .imagelink2{
-  grid-area:3/2;
+    display:inline;
+  /*grid-area:3/2;*/
 
   /*position: absolute;*/
   /*grid-area:4/1;*/
-  /*  margin-bottom:30%;*/
-    margin-left:0%;
+
     width:auto;
     height:auto;
-    position: relative;
+
 
 }
 .theimg2{
   position:static;
 
-  width:100%;
+  width:40%;
   height:80%;
-  max-width:100%;
+  max-width:40%;
   max-height:80%;
   /*left:40%;
   bottom:10%;*/
@@ -231,7 +241,7 @@ bottom:10%;
           <li>Figma </li>
           <li>SQL</li>
           </ul>
-
+<div class ="formobile">
     <ul class ="ul2">
       <div class="coursestaken">Courses Taken</div>
     <li> Intro to Computer Engineering w/ Java </li>
@@ -245,7 +255,7 @@ bottom:10%;
     <a class = "imagelink2" href = "index.html">
           <img class = "theimg2" src = "blackhole3.png"/>
         </a>
-
+</div>
     <div class="c"> <div class="speech">"I am in a position where a web developer role is the most appealing to me, however I'm open minded to
       an adjacent role. I'm currently in training to brush up my backend skills to achieve my goal of being a Full Stack developer.
       Ultimately I would love to become a Product Manager down the line or possibly either a Computer Systems Analyst, Applications Architect,
