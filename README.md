@@ -1,5 +1,9 @@
 ### Hi there 👋
 
+Part UX/UI designer/Part Graphic Designer/Part Full Stack Developer.
+
+"Any kind of guy you want, that's the kind I'll be" 😄 
+
 <!--
 **curtgrim2/curtgrim2** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
