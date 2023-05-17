@@ -123,12 +123,14 @@ top:110%;
 }
 
  .linkback2{
-   padding-top:60px;
-   padding-bottom:60px;
+   padding-top:50px;
+   padding-bottom:50px;
 }
 
-.linkback2:hover{
-    text-shadow: 0px 0px 1px black, 2px 2px 1px white;
+
+#homepage:hover{
+    box-shadow: 1px 1px 40px 10px white;
+    text-shadow: 0px 0px 1px black, 2px 2px 10px teal;
 }
 
 
@@ -273,12 +275,14 @@ body{
 
 html{
 
+  width:100%;
+  max-width:100%;
 background-size: cover;
 
 }
 
 .paper{
-  display:block;
+  width:100%;
 }
 h{
   position: relative;
@@ -295,11 +299,13 @@ h{
 }
 
 .describe{
-  width:400px;
+  width:100%;
   position:relative;
   left:0%;
+  
   margin-top:10%;
   margin-bottom:10%;
+
 
 
 }
@@ -336,6 +342,7 @@ h{
 .forfloat{
 
 left:0px;
+
 }
 
 h{
@@ -343,10 +350,19 @@ h{
 }
 
 hr{
-  position: relative;
+  /*position: relative;
   left:5%;
-  padding-right: 100%;
-    padding-left: 100%;
+  padding-right: 33%;
+    padding-left: 33%;
+    margin-right: auto;
+    margin-left: auto;*/
+    padding-right: 1%;
+      padding-left: 1%;
+      text-align: center;
+}
+
+.inspo{
+
 }
 
 
@@ -406,7 +422,7 @@ is highly impressive and something that I keep in mind when building websites. T
 
 
 
-<a href = "index.html">
+<a id = "homepage" href = "index.html">
   <div class = "linkback2">
 HOMEPAGE</div> <!--DONT LOSE TOUCH  -->
 </a>
