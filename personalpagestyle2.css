@@ -38,7 +38,7 @@ a{
   background-size: cover;
   position:fixed;
   top:0;
-  z-index:1;
+  z-index:-1;
   background-color: black;
   /*background-image:url("3dmist5.png");*/
   overflow:hidden;
